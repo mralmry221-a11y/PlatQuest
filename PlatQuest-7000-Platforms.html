@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlatQuest — مكتبة التروفيات والأغلفة التلقائية</title>
+<style>
+:root{--bg:#0b0c16;--panel:#141629;--panel2:#1c1f37;--line:#2c3050;--text:#f5f5ff;--muted:#a7aac6;--purple:#8b5cf6;--cyan:#50e3c2;--gold:#ffd166}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#21153f 0,transparent 40%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{max-width:1180px;margin:auto;padding:22px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:26px}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(135deg,#9b5cff,#4c2db8);display:grid;place-items:center;font-size:25px;box-shadow:0 8px 28px #7543df44}.brand h1{font-size:24px;margin:0;letter-spacing:.2px}.brand p{margin:3px 0 0;color:var(--muted);font-size:13px}.pill{border:1px solid #46406d;background:#1b1830;color:#d8ccff;padding:8px 12px;border-radius:99px;font-size:12px}.hero{padding:30px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(115deg,#21173e,#15182c 65%,#102d32);display:grid;grid-template-columns:1.5fr .7fr;gap:22px;align-items:center;margin-bottom:22px}.eyebrow{color:var(--cyan);font-size:13px;font-weight:700}.hero h2{font-size:clamp(26px,4vw,43px);line-height:1.25;margin:12px 0}.hero p{color:#c0c3dd;line-height:1.8;margin:0 0 18px;max-width:630px}.primary{background:linear-gradient(120deg,#9861ff,#6740dc);color:white;border:0;border-radius:12px;padding:11px 16px;font-weight:700}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:10px 14px}.trophy-art{display:grid;place-items:center;min-height:160px;font-size:100px;filter:drop-shadow(0 10px 28px #8b5cf688)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:24px}.stat,.panel,.game{background:var(--panel);border:1px solid var(--line);border-radius:18px}.stat{padding:17px}.stat span{color:var(--muted);font-size:13px}.stat strong{display:block;font-size:27px;margin-top:5px}.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0 14px}.sectionhead h3{margin:0;font-size:21px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filters input,.filters select,.chat-input{background:#101221;color:var(--text);border:1px solid var(--line);border-radius:11px;padding:10px 12px;outline:none}.filters input{min-width:210px}.filters input:focus,.chat-input:focus{border-color:var(--purple)}.games{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.game{padding:15px;transition:.15s}.game:hover{transform:translateY(-2px);border-color:#64509a}.cover{height:205px;border-radius:13px;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:47px;margin-bottom:13px;background:linear-gradient(135deg,#33215b,#182b49);position:relative}.cover img{width:100%;height:100%;display:block;object-fit:cover}.cover.poster{font-size:14px;text-align:center;padding:18px;flex-direction:column;gap:10px;background:radial-gradient(circle at 25% 20%,var(--poster-glow,#8b5cf6)66,transparent 68%),linear-gradient(145deg,#17182b,#10111d 60%,#26334b);border:1px solid #ffffff1c}.poster-mark{font-size:48px;filter:drop-shadow(0 6px 18px #8b5cf688)}.poster-title{font-weight:800;font-size:15px;line-height:1.35;text-shadow:0 2px 8px #000}.poster-meta{font-size:10px;color:#c6c8e5;letter-spacing:1px;text-transform:uppercase}.cover .cover-label{position:absolute;bottom:0;right:0;left:0;padding:14px 8px 7px;background:linear-gradient(transparent,#090a14cc);font-size:10px;color:#f4f1ff;text-align:center;opacity:.9;pointer-events:none}.platform-badge{position:absolute;top:8px;left:8px;z-index:2;background:#111322d9;border:1px solid #ffffff30;color:#fff;padding:5px 8px;border-radius:8px;font-size:10px;font-weight:700;pointer-events:none}.game:nth-child(2) .cover{background:linear-gradient(135deg,#143d49,#202044)}.game:nth-child(3) .cover{background:linear-gradient(135deg,#5b2a2b,#262040)}.game h4{margin:0 0 5px;font-size:16px}.sub{color:var(--muted);font-size:12px}.bar{height:7px;background:#292d48;border-radius:20px;overflow:hidden;margin:12px 0 7px}.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--purple),var(--cyan));border-radius:20px}.gamefoot{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}.smallbtn{background:#27203e;border:1px solid #47356e;color:#e9dfff;padding:8px 10px;border-radius:10px;font-size:12px}.layout{display:grid;grid-template-columns:1.05fr .95fr;gap:14px;margin-top:20px}.panel{padding:18px}.panel h3{margin:0 0 14px}.trophyrow{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid #292d46}.trophyrow:last-child{border-bottom:0}.trophyrow input{accent-color:var(--purple);width:17px;height:17px;margin-top:3px}.trophyname{font-weight:650}.trophyrow p{margin:4px 0 0;color:var(--muted);font-size:12px;line-height:1.6}.rarity{margin-right:auto;font-size:12px;white-space:nowrap}.platinum{color:#a9dfff}.gold{color:var(--gold)}.silver{color:#d8dced}.bronze{color:#dc9a70}.chat{display:flex;flex-direction:column;min-height:340px}.chatlog{flex:1;display:flex;flex-direction:column;gap:10px;max-height:330px;overflow:auto;margin-bottom:12px}.bubble{padding:11px 13px;border-radius:14px;line-height:1.7;font-size:13px;max-width:95%;white-space:pre-wrap}.bot{background:#20233b;border:1px solid #333857;align-self:flex-start}.user{background:#4f3290;align-self:flex-end}.chatbar{display:flex;gap:8px}.chat-input{flex:1;min-width:0}.quick{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}.quick button{background:#191b2e;border:1px solid var(--line);border-radius:99px;color:#c8c9e0;padding:7px 10px;font-size:11px}.note{color:var(--muted);font-size:12px;line-height:1.7;margin-top:22px;border-top:1px solid var(--line);padding-top:15px}.empty{color:var(--muted);padding:22px;text-align:center;grid-column:1/-1}.guide-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.guide-link{display:inline-flex;align-items:center;justify-content:center;background:#20243a;border:1px solid #454b70;color:#d8dfff;border-radius:10px;padding:9px 11px;text-decoration:none;font-size:12px}.guide-link:hover{border-color:var(--cyan)}.hidden{display:none!important}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.trophy-art{min-height:90px;font-size:70px}.games{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}}
+@media(max-width:480px){.wrap{padding:14px}.hero{padding:21px}.stats{gap:8px}.stat{padding:12px}.stat strong{font-size:22px}.games{grid-template-columns:1fr}.cover{height:155px}.filters input{min-width:100%;width:100%}.filters{width:100%}.filters select{flex:1}}
+
+.pq-map-page{position:fixed;inset:0;z-index:9999;overflow:auto;background:radial-gradient(ellipse at top right,#21153f 0,transparent 42%),var(--bg);padding:20px}.pq-map-inner{max-width:1000px;margin:0 auto}.pq-map-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0}.pq-map-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.pq-map-option{background:#171a2c;border:1px solid #2c3050;border-radius:14px;padding:15px}.pq-map-option h3{margin:0 0 8px;font-size:16px}.pq-map-option p{color:var(--muted);font-size:13px;line-height:1.7}.pq-game-details{margin:16px 0;padding:16px;border:1px solid #343958;border-radius:15px;background:#111425}.pq-game-details h3{margin:15px 0 8px;font-size:17px}.pq-game-details h3:first-child{margin-top:0}.pq-game-details p{color:var(--muted);font-size:13px;line-height:1.8}.pq-characters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pq-character{display:flex;gap:10px;padding:11px;border:1px solid #2b304b;border-radius:12px;background:#171a2c;min-width:0}.pq-character strong{font-size:13px}.pq-character p{margin:4px 0 8px}.pq-char-icon{width:82px;height:104px;flex:0 0 82px;border-radius:10px;background:#282044;display:grid;place-items:center;font-size:22px;overflow:hidden}.pq-char-icon img{width:100%;height:100%;object-fit:cover}.pq-audio-box{padding:14px;border:1px solid #45406d;border-radius:14px;background:linear-gradient(120deg,#21173e,#111625);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:12px 0}.pq-audio-box p{margin:4px 0 0;color:var(--muted);font-size:12px;line-height:1.6}.pq-audio-controls{display:flex;gap:8px;flex-wrap:wrap}.pq-audio-status{font-size:12px;color:var(--cyan);margin-top:6px}.pq-disclaimer{border-top:1px solid #2c3050;padding-top:10px;font-size:11px!important}@media(max-width:600px){.pq-characters{grid-template-columns:1fr}.pq-game-details{padding:12px}}
+
+/* PlatQuest modern filter redesign */
+.pq-classify{position:relative;overflow:hidden;padding:clamp(16px,2.4vw,26px);background:linear-gradient(135deg,#11131f 0%,#151329 56%,#101d2b 100%);border-color:#30334e;box-shadow:inset 0 1px #ffffff08}
+.pq-classify:before{content:"";position:absolute;width:250px;height:250px;left:-100px;top:-130px;background:#8657ff20;filter:blur(25px);border-radius:50%;pointer-events:none}
+.pq-classify-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px;position:relative}
+.pq-classify-head h3{font-size:clamp(20px,2.4vw,27px);margin:5px 0 7px;letter-spacing:-.5px}
+.pq-classify-head p{margin:0;line-height:1.7}
+.pq-kicker{font-size:10px;font-weight:850;letter-spacing:1.8px;color:#9b83ff}
+.pq-classify-mark{width:58px;height:58px;flex:0 0 58px;border:1px solid #8b5cf64d;border-radius:18px;display:grid;place-items:center;font-size:36px;color:#c2b3ff;background:linear-gradient(145deg,#8b5cf626,#42d9c415);box-shadow:0 8px 28px #0003}
+.pq-filter-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;position:relative}
+.pq-filter-card{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:15px;border:1px solid #343750;border-radius:16px;background:linear-gradient(160deg,#1b1d30,#151725);transition:border-color .18s,transform .18s,background .18s;cursor:pointer}
+.pq-filter-card:hover{transform:translateY(-2px);border-color:#7661b4;background:linear-gradient(160deg,#22213c,#171a2a)}
+.pq-filter-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:11px;font-size:19px;background:#8b5cf61a;color:#b9a3ff;border:1px solid #8b5cf633}
+.pq-genre .pq-filter-icon{background:#31d8c21a;color:#6de8d8;border-color:#31d8c233}.pq-trophy .pq-filter-icon{background:#ffca641a;color:#ffd782;border-color:#ffca6433}.pq-status .pq-filter-icon{background:#6aa8ff1a;color:#9bc5ff;border-color:#6aa8ff33}
+.pq-filter-title{font-size:13px;font-weight:800;color:#e8e9fa}
+.pq-filter-card select{width:100%;min-width:0;appearance:none;-webkit-appearance:none;color:#e7e8f7;background:#10121f;border:1px solid #343750;border-radius:10px;padding:11px 30px 11px 10px;font-size:12px;outline:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23aaa5d3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 10px center}
+.pq-filter-card select:focus{border-color:#9b7bff;box-shadow:0 0 0 3px #8b5cf61c}
+.pq-filter-card select option{background:#151625;color:#f5f5ff}
+.pq-classify-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid #ffffff10}
+.pq-reset{border:1px solid #41415f;background:#1b1b2b;color:#d8d5f4;border-radius:11px;padding:10px 13px;font-size:12px;font-weight:750;transition:.18s}.pq-reset:hover{border-color:#9b7bff;color:#fff;background:#29213f}
+#classificationCount{line-height:1.7}
+#pqGenreImportChoices label{display:inline-flex;align-items:center;gap:8px;padding:10px 12px!important;border:1px solid #343750;border-radius:12px;background:#171827;color:#d9daf0;cursor:pointer;transition:.18s;font-size:12px!important}
+#pqGenreImportChoices label:has(input:checked){background:linear-gradient(135deg,#38245f,#20213b);border-color:#8b5cf6;color:#fff;box-shadow:inset 0 0 0 1px #8b5cf622}
+#pqGenreImportChoices input{accent-color:#a78bfa;width:16px;height:16px}
+#rawgImportPanel h3{font-size:20px}#pqImportLimit{cursor:pointer;min-width:100px}
+@media(max-width:900px){.pq-filter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.pq-filter-grid{grid-template-columns:1fr 1fr;gap:8px}.pq-filter-card{padding:11px;gap:8px}.pq-filter-title{font-size:12px}.pq-filter-card select{font-size:11px;padding:10px 24px 10px 7px;background-position:left 7px center}.pq-classify-mark{width:46px;height:46px;flex-basis:46px;font-size:29px;border-radius:14px}.pq-classify-foot{align-items:stretch}.pq-reset{width:100%}}
+
+
+/* PlatQuest modern dropdown system */
+select{color-scheme:dark}
+.pq-select-native{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important;clip-path:inset(50%)!important;overflow:hidden!important}
+.pq-select-wrap{position:relative;width:100%;min-width:0;z-index:5}
+.pq-select-wrap.pq-open{z-index:1000}
+.pq-select-trigger{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:42px;padding:10px 12px;border:1px solid #343750;border-radius:12px;background:linear-gradient(135deg,#191b2d,#10121f);color:#f3f1ff;font:inherit;font-size:12px;font-weight:700;text-align:right;cursor:pointer;transition:border-color .18s,box-shadow .18s,transform .18s}
+.pq-select-trigger:hover,.pq-select-wrap.pq-open .pq-select-trigger{border-color:#9b7bff;box-shadow:0 0 0 3px #8b5cf61c}
+.pq-select-trigger:focus-visible{outline:2px solid #a78bfa;outline-offset:2px}
+.pq-select-chevron{color:#a99bff;font-size:15px;transition:transform .18s;flex:0 0 auto}
+.pq-select-wrap.pq-open .pq-select-chevron{transform:rotate(180deg)}
+.pq-select-menu{position:absolute;top:calc(100% + 7px);right:0;left:0;max-height:min(320px,55vh);overflow:auto;padding:6px;border:1px solid #393451;border-radius:14px;background:linear-gradient(160deg,#1b1b30,#10111f);box-shadow:0 18px 48px #0009;display:none;z-index:1001;overscroll-behavior:contain}
+.pq-select-wrap.pq-open .pq-select-menu{display:block;animation:pqDropIn .14s ease-out}
+.pq-select-option{display:flex;align-items:center;gap:9px;width:100%;padding:10px;border:1px solid transparent;border-radius:9px;background:transparent;color:#deddf3;font:inherit;font-size:12px;text-align:right;cursor:pointer;line-height:1.5}
+.pq-select-option:hover,.pq-select-option:focus-visible{background:#282342;border-color:#514272;color:#fff;outline:none}
+.pq-select-option[aria-selected="true"]{background:linear-gradient(100deg,#38265f,#20213b);border-color:#8060c9;color:#fff;font-weight:800}
+.pq-select-check{margin-right:auto;color:#b9a0ff;font-weight:900}
+@keyframes pqDropIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.pq-select-menu{max-height:48vh}.pq-select-trigger{min-height:44px}}
+
+</style>
+</head>
+<body><div class="wrap">
+<header class="top"><div class="brand"><div class="logo">🏆</div><div><h1>PlatQuest</h1><p id="brandTagline">رحلتك من أول تروفي إلى البلاتينيوم</p></div></div><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><label for="languageSelect" id="languageLabel" class="sub">اللغة</label><select id="languageSelect" aria-label="Language" style="background:#101221;color:var(--text);border:1px solid var(--line);border-radius:11px;padding:9px 10px"><option value="ar">العربية</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="pt">Português</option></select><span class="pill" id="betaPill">نسخة تجريبية · Beta</span></div></header>
+<section class="hero"><div><div class="eyebrow">كل تروفي يقربك من الهدف</div><h2>اصطد البلاتينيوم،<br>تروفي وراء تروفي.</h2><p>مكتبة ألعاب، متابعة تقدمك، ومساعد يساعدك تفهم التروفيات الصعبة وتخطط لرحلتك.</p><button class="primary" onclick="document.getElementById('library').scrollIntoView({behavior:'smooth'})">استكشف المكتبة ←</button></div><div class="trophy-art">🏆</div></section>
+<section class="stats"><div class="stat"><span>ألعاب في المكتبة</span><strong id="gameCount">53</strong></div><div class="stat"><span>تروفيات مسجلة</span><strong id="earnedCount">0</strong></div><div class="stat"><span>تقدمك في التروفيات المسجلة</span><strong id="overall">0%</strong></div></section>
+<div class="sectionhead" id="library"><h3>🎮 مكتبة الألعاب</h3><div class="filters"><input id="search" placeholder="ابحث عن لعبة..." aria-label="ابحث عن لعبة"><select id="platform"><option value="all">كل الأجهزة</option><option>PS5</option><option>PS4</option><option>PS3</option><option>PS2</option><option>PS1</option><option>PS Vita</option><option>PSP</option></select><select id="sort"><option value="default">الترتيب الافتراضي</option><option value="rating">الأعلى تقييمًا</option><option value="az">الاسم أ–ي</option><option value="year">الأحدث إصدارًا</option></select><button class="secondary" id="retryCovers" type="button">إعادة تحميل الصور</button><button class="secondary" id="importDb" type="button">استيراد قاعدة بيانات JSON</button><button class="secondary" id="exportDb" type="button">تصدير نسخة احتياطية</button><input id="dbFile" type="file" accept=".json,application/json" class="hidden" aria-label="اختر ملف قاعدة بيانات JSON"></div></div>
+<section class="panel pq-classify" id="classificationPanel" style="margin:0 0 16px"><div class="pq-classify-head"><div><div class="pq-kicker">DISCOVER YOUR NEXT PLATINUM</div><h3>استكشف مكتبة الألعاب</h3><p class="sub">اختر الفلاتر اللي تناسبك — تقدر تجمع أكثر من خيار مع بعض.</p></div><div class="pq-classify-mark">⌕</div></div><div class="pq-filter-grid"><label class="pq-filter-card pq-pop"><span class="pq-filter-icon">✦</span><span class="pq-filter-title">الشهرة والتقييم</span><select id="popularityFilter" aria-label="حسب الشهرة"><option value="all">كل مستويات الشهرة</option><option value="popular">مشهورة · 8.5 فأعلى</option><option value="top">الأعلى تقييمًا · 9 فأعلى</option><option value="unrated">بدون تقييم</option></select></label><label class="pq-filter-card pq-genre"><span class="pq-filter-icon">◈</span><span class="pq-filter-title">نوع اللعبة</span><select id="genreFilter" aria-label="حسب النوع"><option value="all">كل الأنواع</option><option value="رعب">رعب وبقاء</option><option value="عالم مفتوح">عالم مفتوح</option><option value="أكشن">أكشن ومغامرات</option><option value="تقمص أدوار">تقمص أدوار</option><option value="رياضة">رياضة</option><option value="سباقات">سباقات</option><option value="قتال">قتال وأنمي</option><option value="تصويب">تصويب</option><option value="ألغاز">ألغاز وذكاء</option><option value="منصات">منصات</option></select></label><label class="pq-filter-card pq-trophy"><span class="pq-filter-icon">🏆</span><span class="pq-filter-title">التروفيات</span><select id="trophyFilter" aria-label="حسب التروفيات"><option value="all">كل حالات التروفيات</option><option value="entered">قائمة تروفيات مدخلة</option><option value="missing">تحتاج قائمة أو دليل</option><option value="started">بدأت التقدم</option><option value="done">أنهيت التروفيات المسجلة</option></select></label><label class="pq-filter-card pq-status"><span class="pq-filter-icon">◉</span><span class="pq-filter-title">حالة لعبك</span><select id="playerStatusFilter" aria-label="حسب حالة اللاعب"><option value="all">كل الحالات</option><option value="want">أبغى ألعبها</option><option value="playing">ألعبها حاليًا</option><option value="completed">أنهيتها</option><option value="platinum">جبت البلاتينيوم</option></select></label></div><div class="pq-classify-foot"><div id="classificationCount" class="sub" aria-live="polite"></div><button class="pq-reset" id="clearClassification" type="button">↺ إعادة ضبط الفلاتر</button></div></section>
+<section class="panel" id="rawgPanel" style="margin:0 0 16px">
+<h3>🖼️ ربط أغلفة الألعاب تلقائيًا (RAWG)</h3>
+<p class="sub" style="line-height:1.8;margin-top:-5px">ألصق مفتاح RAWG مرة واحدة في هذه الخانة، ثم اضغط «جلب الأغلفة». سيبحث PlatQuest عن صورة لكل لعبة في مكتبتك ويحفظ روابط الصور محليًا على هذا المتصفح.</p>
+<div class="filters" style="align-items:center">
+<input id="rawgKeyInput" type="password" autocomplete="off" placeholder="الصق مفتاح RAWG API هنا" aria-label="مفتاح RAWG API" style="min-width:260px;flex:1">
+<button class="primary" id="rawgLoadCovers" type="button">🪄 جلب الأغلفة</button>
+<button class="secondary" id="rawgClearKey" type="button">مسح المفتاح</button>
+</div>
+<div id="rawgStatus" class="sub" role="status" aria-live="polite" style="margin-top:10px">جاهز — لم يتم الاتصال بـ RAWG بعد.</div>
+<p class="sub" style="line-height:1.7;margin-bottom:0">تنبيه: مفتاح API داخل صفحة HTML ليس محميًا إذا شاركت الملف. لا ترفع نسخة تحتوي على المفتاح أو تشارك المفتاح مع الآخرين. RAWG يوفر بيانات ألعاب عامة، وليس قاعدة تروفيات PlayStation الرسمية.</p>
+</section>
+<section class="panel" id="rawgImportPanel" style="margin:0 0 16px">
+<h3>🎮 استيراد الألعاب حسب منصة PlayStation</h3>
+<p class="sub" style="line-height:1.8;margin-top:-5px">اختر الأجهزة أولًا، ثم الأنواع. الهدف يصل إلى 1,000 لعبة فريدة لكل جهاز، مرتبة حسب تقييم RAWG قدر الإمكان. الاستيراد يضيف بيانات الألعاب والأغلفة والتقييمات المتاحة، وليس قوائم تروفيات رسمية. قد يقل العدد حسب نتائج المصدر.</p>
+<div class="filters" id="pqPlatformImportChoices" style="gap:10px;margin:12px 0">
+<label class="sub"><input type="checkbox" value="187" data-platform="PS5" checked> 🎮 PS5</label>
+<label class="sub"><input type="checkbox" value="18" data-platform="PS4" checked> 🎮 PS4</label>
+<label class="sub"><input type="checkbox" value="16" data-platform="PS3"> 🎮 PS3</label>
+<label class="sub"><input type="checkbox" value="15" data-platform="PS2"> 🎮 PS2</label>
+<label class="sub"><input type="checkbox" value="27" data-platform="PS1"> 🎮 PS1</label>
+<label class="sub"><input type="checkbox" value="17" data-platform="PSP"> 🎮 PSP</label>
+<label class="sub"><input type="checkbox" value="19" data-platform="PS Vita"> 🎮 PS Vita</label>
+</div>
+<div class="filters" id="pqGenreImportChoices" style="gap:10px;margin:12px 0">
+<label class="sub"><input type="checkbox" value="action" checked> أكشن ومغامرات</label>
+<label class="sub"><input type="checkbox" value="adventure" checked> مغامرات</label>
+<label class="sub"><input type="checkbox" value="role-playing-games-rpg" checked> تقمص أدوار</label>
+<label class="sub"><input type="checkbox" value="shooter" checked> تصويب</label>
+<label class="sub"><input type="checkbox" value="strategy" checked> استراتيجية</label>
+<label class="sub"><input type="checkbox" value="puzzle" checked> ألغاز</label>
+<label class="sub"><input type="checkbox" value="racing" checked> سباقات</label>
+<label class="sub"><input type="checkbox" value="sports" checked> رياضة</label>
+<label class="sub"><input type="checkbox" value="fighting" checked> قتال</label>
+<label class="sub"><input type="checkbox" value="platformer" checked> منصات</label>
+<label class="sub"><input type="checkbox" value="simulation" checked> محاكاة</label>
+<label class="sub"><input type="checkbox" value="indie" > ألعاب مستقلة</label>
+</div>
+<div class="filters" style="align-items:center"><label class="sub">الحد لكل جهاز <select id="pqImportLimit" style="background:#101221;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:9px"><option value="1000" selected>1,000</option><option value="500">500</option><option value="200">200</option><option value="100">100</option></select></label><button class="primary" id="pqImportPopular" type="button">🚀 استيراد الأنواع المحددة</button><button class="secondary" id="pqStopImport" type="button" disabled>إيقاف الاستيراد</button></div>
+<div id="pqImportStatus" class="sub" role="status" aria-live="polite" style="margin-top:12px">جاهز. أدخل مفتاح RAWG في القسم أعلاه أولًا.</div>
+</section>
+<section class="games" id="games"><article class="game"><div class="cover poster"><span class="poster-mark">🧟</span><span class="poster-title">Resident Evil 7: Biohazard</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Resident Evil 7: Biohazard</h4><div class="sub">PS4 · 2017 · رعب وبقاء</div><div class="sub" style="margin-top:7px">38 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/38</span><span class="smallbtn">عرض التروفيات</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🕷️</span><span class="poster-title">Marvel’s Spider-Man: Miles Morales</span><span class="poster-meta">PS4 / PS5 · 2020</span><span class="platform-badge">PS4 / PS5</span></div><h4>Marvel’s Spider-Man: Miles Morales</h4><div class="sub">PS4 / PS5 · 2020 · أكشن ومغامرات</div><div class="sub" style="margin-top:7px">50 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/50</span><span class="smallbtn">عرض التروفيات</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">⛏️</span><span class="poster-title">Minecraft</span><span class="poster-meta">PS4 · 2014</span><span class="platform-badge">PS4</span></div><h4>Minecraft</h4><div class="sub">PS4 · 2014 · بقاء وصناعة</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🎭</span><span class="poster-title">Persona 5 Royal</span><span class="poster-meta">PS4 · 2019</span><span class="platform-badge">PS4</span></div><h4>Persona 5 Royal</h4><div class="sub">PS4 · 2019 · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🤠</span><span class="poster-title">Red Dead Redemption II</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Red Dead Redemption II</h4><div class="sub">PS4 · 2018 · أكشن ومغامرات · عالم مفتوح</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🚘</span><span class="poster-title">Grand Theft Auto V</span><span class="poster-meta">PS4 · 2014</span><span class="platform-badge">PS4</span></div><h4>Grand Theft Auto V</h4><div class="sub">PS4 · 2014 · أكشن · عالم مفتوح · قيادة</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🎭</span><span class="poster-title">Persona 5</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Persona 5</h4><div class="sub">PS4 · 2017 · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🐺</span><span class="poster-title">The Witcher 3: Wild Hunt</span><span class="poster-meta">PS4 · 2015</span><span class="platform-badge">PS4</span></div><h4>The Witcher 3: Wild Hunt</h4><div class="sub">PS4 · 2015 · تقمص أدوار · عالم مفتوح</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🪓</span><span class="poster-title">God of War</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>God of War</h4><div class="sub">PS4 · 2018 · أكشن ومغامرات</div><div class="sub" style="margin-top:7px">37 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/37</span><span class="smallbtn">عرض التروفيات</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧟</span><span class="poster-title">Resident Evil 2</span><span class="poster-meta">PS4 · 2019</span><span class="platform-badge">PS4</span></div><h4>Resident Evil 2</h4><div class="sub">PS4 · 2019 · رعب وبقاء</div><div class="sub" style="margin-top:7px">42 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/42</span><span class="smallbtn">عرض التروفيات</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧭</span><span class="poster-title">Uncharted 4: A Thief’s End</span><span class="poster-meta">PS4 · 2016</span><span class="platform-badge">PS4</span></div><h4>Uncharted 4: A Thief’s End</h4><div class="sub">PS4 · 2016 · أكشن ومغامرات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🤖</span><span class="poster-title">NieR: Automata</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>NieR: Automata</h4><div class="sub">PS4 · 2017 · أكشن · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🍄</span><span class="poster-title">The Last of Us: Remastered</span><span class="poster-meta">PS4 · 2014</span><span class="platform-badge">PS4</span></div><h4>The Last of Us: Remastered</h4><div class="sub">PS4 · 2014 · أكشن · بقاء</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🩸</span><span class="poster-title">Bloodborne</span><span class="poster-meta">PS4 · 2015</span><span class="platform-badge">PS4</span></div><h4>Bloodborne</h4><div class="sub">PS4 · 2015 · تقمص أدوار · سولزلايك</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">⚔️</span><span class="poster-title">Final Fantasy VII: Remake</span><span class="poster-meta">PS4 · 2020</span><span class="platform-badge">PS4</span></div><h4>Final Fantasy VII: Remake</h4><div class="sub">PS4 · 2020 · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🍄</span><span class="poster-title">The Last of Us: Part II</span><span class="poster-meta">PS4 · 2020</span><span class="platform-badge">PS4</span></div><h4>The Last of Us: Part II</h4><div class="sub">PS4 · 2020 · أكشن · بقاء</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🟣</span><span class="poster-title">Rayman Legends</span><span class="poster-meta">PS4 · 2014</span><span class="platform-badge">PS4</span></div><h4>Rayman Legends</h4><div class="sub">PS4 · 2014 · منصات · أكشن</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🌙</span><span class="poster-title">Tsukihime: A Piece of Blue Glass Moon</span><span class="poster-meta">PS4 · 2021</span><span class="platform-badge">PS4</span></div><h4>Tsukihime: A Piece of Blue Glass Moon</h4><div class="sub">PS4 · 2021 · رواية مرئية · مغامرات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🛡️</span><span class="poster-title">Odin Sphere: Leifthrasir</span><span class="poster-meta">PS4 · 2016</span><span class="platform-badge">PS4</span></div><h4>Odin Sphere: Leifthrasir</h4><div class="sub">PS4 · 2016 · أكشن · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧩</span><span class="poster-title">Tetris Effect</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Tetris Effect</h4><div class="sub">PS4 · 2018 · ألغاز · إيقاع</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">👹</span><span class="poster-title">DOOM Eternal</span><span class="poster-meta">PS4 · 2020</span><span class="platform-badge">PS4</span></div><h4>DOOM Eternal</h4><div class="sub">PS4 · 2020 · أكشن · تصويب</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🏜️</span><span class="poster-title">Journey</span><span class="poster-meta">PS4 · 2015</span><span class="platform-badge">PS4</span></div><h4>Journey</h4><div class="sub">PS4 · 2015 · مغامرات · استكشاف</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🛹</span><span class="poster-title">Tony Hawk’s Pro Skater 1 + 2</span><span class="poster-meta">PS4 · 2020</span><span class="platform-badge">PS4</span></div><h4>Tony Hawk’s Pro Skater 1 + 2</h4><div class="sub">PS4 · 2020 · رياضة</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🕸️</span><span class="poster-title">Marvel’s Spider-Man</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Marvel’s Spider-Man</h4><div class="sub">PS4 · 2018 · أكشن · عالم مفتوح</div><div class="sub" style="margin-top:7px">51 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/51</span><span class="smallbtn">عرض التروفيات</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🔥</span><span class="poster-title">Dark Souls III</span><span class="poster-meta">PS4 · 2016</span><span class="platform-badge">PS4</span></div><h4>Dark Souls III</h4><div class="sub">PS4 · 2016 · تقمص أدوار · سولزلايك</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🥷</span><span class="poster-title">Sekiro: Shadows Die Twice</span><span class="poster-meta">PS4 · 2019</span><span class="platform-badge">PS4</span></div><h4>Sekiro: Shadows Die Twice</h4><div class="sub">PS4 · 2019 · أكشن · سولزلايك</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🗿</span><span class="poster-title">Shadow of the Colossus</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Shadow of the Colossus</h4><div class="sub">PS4 · 2018 · أكشن · مغامرات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🐉</span><span class="poster-title">Dragon Quest XI S: Echoes of an Elusive Age – Definitive Edition</span><span class="poster-meta">PS4 · 2020</span><span class="platform-badge">PS4</span></div><h4>Dragon Quest XI S: Echoes of an Elusive Age – Definitive Edition</h4><div class="sub">PS4 · 2020 · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🔺</span><span class="poster-title">Rez Infinite</span><span class="poster-meta">PS4 · 2016</span><span class="platform-badge">PS4</span></div><h4>Rez Infinite</h4><div class="sub">PS4 · 2016 · إيقاع · تصويب</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🔥</span><span class="poster-title">Dark Souls: Remastered</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Dark Souls: Remastered</h4><div class="sub">PS4 · 2018 · تقمص أدوار · سولزلايك</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">⛩️</span><span class="poster-title">Ghost of Tsushima</span><span class="poster-meta">PS4 · 2020</span><span class="platform-badge">PS4</span></div><h4>Ghost of Tsushima</h4><div class="sub">PS4 · 2020 · أكشن · عالم مفتوح</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🐺</span><span class="poster-title">Ōkami</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Ōkami</h4><div class="sub">PS4 · 2017 · أكشن · مغامرات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🤖</span><span class="poster-title">NieR: Automata – Game of the YoRHa Edition</span><span class="poster-meta">PS4 · 2019</span><span class="platform-badge">PS4</span></div><h4>NieR: Automata – Game of the YoRHa Edition</h4><div class="sub">PS4 · 2019 · تقمص أدوار · إصدار خاص</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🐉</span><span class="poster-title">Dragon Quest XI: Echoes of an Elusive Age</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Dragon Quest XI: Echoes of an Elusive Age</h4><div class="sub">PS4 · 2017 · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧟</span><span class="poster-title">Resident Evil 4 (2023)</span><span class="poster-meta">PS4 · 2023</span><span class="platform-badge">PS4</span></div><h4>Resident Evil 4 (2023)</h4><div class="sub">PS4 · 2023 · رعب وبقاء · أكشن</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">⛩️</span><span class="poster-title">Ghost of Tsushima: Director’s Cut</span><span class="poster-meta">PS4 / PS5 · 2021</span><span class="platform-badge">PS4 / PS5</span></div><h4>Ghost of Tsushima: Director’s Cut</h4><div class="sub">PS4 / PS5 · 2021 · أكشن · عالم مفتوح · إصدار خاص</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🤖</span><span class="poster-title">Astro Bot: Rescue Mission</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Astro Bot: Rescue Mission</h4><div class="sub">PS4 · 2018 · منصات · واقع افتراضي</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧙</span><span class="poster-title">Divinity: Original Sin II</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Divinity: Original Sin II</h4><div class="sub">PS4 · 2018 · تقمص أدوار · تكتيكي</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🤖</span><span class="poster-title">13 Sentinels: Aegis Rim</span><span class="poster-meta">PS4 · 2019</span><span class="platform-badge">PS4</span></div><h4>13 Sentinels: Aegis Rim</h4><div class="sub">PS4 · 2019 · مغامرات · استراتيجية</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🕸️</span><span class="poster-title">Marvel’s Spider-Man: Game of the Year Edition</span><span class="poster-meta">PS4 · 2019</span><span class="platform-badge">PS4</span></div><h4>Marvel’s Spider-Man: Game of the Year Edition</h4><div class="sub">PS4 · 2019 · أكشن · عالم مفتوح · إصدار خاص</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧸</span><span class="poster-title">It Takes Two</span><span class="poster-meta">PS4 · 2021</span><span class="platform-badge">PS4</span></div><h4>It Takes Two</h4><div class="sub">PS4 · 2021 · مغامرات تعاونية · منصات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🎨</span><span class="poster-title">Dreams</span><span class="poster-meta">PS4 · 2020</span><span class="platform-badge">PS4</span></div><h4>Dreams</h4><div class="sub">PS4 · 2020 · إبداع · مغامرات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🐲</span><span class="poster-title">Monster Hunter: World</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Monster Hunter: World</h4><div class="sub">PS4 · 2018 · أكشن · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">☠️</span><span class="poster-title">Dead Cells</span><span class="poster-meta">PS4 · 2018</span><span class="platform-badge">PS4</span></div><h4>Dead Cells</h4><div class="sub">PS4 · 2018 · أكشن · روغلايك · منصات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🏹</span><span class="poster-title">Horizon: Zero Dawn</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Horizon: Zero Dawn</h4><div class="sub">PS4 · 2017 · تقمص أدوار · عالم مفتوح</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧭</span><span class="poster-title">Uncharted: The Lost Legacy</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Uncharted: The Lost Legacy</h4><div class="sub">PS4 · 2017 · أكشن ومغامرات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">👹</span><span class="poster-title">Nioh</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Nioh</h4><div class="sub">PS4 · 2017 · أكشن · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧠</span><span class="poster-title">AI: The Somnium Files – nirvanA Initiative</span><span class="poster-meta">PS4 · 2022</span><span class="platform-badge">PS4</span></div><h4>AI: The Somnium Files – nirvanA Initiative</h4><div class="sub">PS4 · 2022 · مغامرات · تحقيق</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🥊</span><span class="poster-title">BlazBlue: Central Fiction</span><span class="poster-meta">PS4 · 2016</span><span class="platform-badge">PS4</span></div><h4>BlazBlue: Central Fiction</h4><div class="sub">PS4 · 2016 · قتال</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🐉</span><span class="poster-title">Yakuza 0</span><span class="poster-meta">PS4 · 2015</span><span class="platform-badge">PS4</span></div><h4>Yakuza 0</h4><div class="sub">PS4 · 2015 · أكشن · مغامرات · تقمص أدوار</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🗡️</span><span class="poster-title">Middle-earth: Shadow of Mordor</span><span class="poster-meta">PS4 · 2014</span><span class="platform-badge">PS4</span></div><h4>Middle-earth: Shadow of Mordor</h4><div class="sub">PS4 · 2014 · أكشن · عالم مفتوح</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🌑</span><span class="poster-title">Inside</span><span class="poster-meta">PS4 · 2016</span><span class="platform-badge">PS4</span></div><h4>Inside</h4><div class="sub">PS4 · 2016 · ألغاز · منصات</div><div class="sub" style="margin-top:7px">0 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/0</span><span class="smallbtn">التروفيات والدليل</span></div></article>
+<article class="game"><div class="cover poster"><span class="poster-mark">🧟</span><span class="poster-title">Resident Evil Code: Veronica X</span><span class="poster-meta">PS4 · 2017</span><span class="platform-badge">PS4</span></div><h4>Resident Evil Code: Veronica X</h4><div class="sub">PS4 · 2017 · رعب وبقاء</div><div class="sub" style="margin-top:7px">30 تروفيًا مدخلًا</div><div class="bar"><i style="width:0%"></i></div><div class="gamefoot"><span class="sub">0/30</span><span class="smallbtn">عرض التروفيات</span></div></article></section>
+<section class="layout"><div class="panel"><h3 id="trophyTitle">🏆 تروفيات اللعبة</h3><div class="sub" id="trophySubtitle">اختر لعبة من المكتبة لعرض التروفيات.</div><div id="trophies" style="margin-top:10px"></div></div>
+<div class="panel chat"><h3>🤖 مساعد PlatQuest</h3><div class="sub" style="margin-bottom:12px">اسأل عن التروفيات أو خطط لرحلتك نحو البلاتينيوم.</div><div class="quick"><button onclick="askQuick('كيف أبدأ خطة البلاتينيوم؟')">خطة البلاتينيوم</button><button onclick="askQuick('كيف أتعامل مع التروفيات التي تفوتني؟')">تروفيات قابلة للفوات</button><button onclick="askQuick('كيف أتابع تقدمي؟')">متابعة التقدم</button></div><div class="chatlog" id="chatlog"><div class="bubble bot" data-welcome="1">هلا بصياد البلاتينيوم! 🏆 اختر لعبة من المكتبة، وعلّم التروفيات التي أنجزتها. أقدر أساعدك بالتخطيط والإرشادات العامة. هذه نسخة أولية، وبعض معلومات التروفيات ما زالت قيد التحقق.</div></div><form class="chatbar" id="chatform"><input class="chat-input" id="question" placeholder="اكتب سؤالك هنا..." autocomplete="off"><button class="primary" type="submit">إرسال</button></form></div></section>
+<div class="note">حالة بيانات المكتبة (مراجعة 18 أكتوبر 2026): تحتوي النسخة الحالية على 53 لعبة. توجد قوائم تروفيات مدخلة داخل التطبيق لست ألعاب: Resident Evil 7 (38)، وResident Evil 2 (42)، وMarvel’s Spider-Man: Miles Morales (50)، وGod of War (2018) (37)، وMarvel’s Spider-Man (51)، وResident Evil Code: Veronica X (30). هذه القوائم مدخلة مبدئيًا وليست معتمدة نهائيًا قبل مطابقة الأسماء والشروط مع مصدر موثوق وإصدار اللعبة والمنصة. الألعاب الـ47 الأخرى لا تملك قوائم تروفيات داخلية مكتملة في هذه النسخة؛ المتاح لها روابط أدلة/بحث خارجية فقط، ولا تُحتسب تروفياتها في نسبة الإنجاز. الصور تُجلب من صفحات ويكيبيديا عند توفرها، لذلك قد تكون صورًا تعريفية وليست أغلفة رسمية مطابقة لكل إصدار؛ عند تعذر التحميل يظهر غلاف بديل ويمكن الضغط على «إعادة تحميل الصور». هذا فهرس أولي وليس جميع ألعاب PlayStation الموجودة عالميًا، ولا يرتبط بحساب PlayStation Network. تقدمك يُحفظ في هذا المتصفح على هذا الجهاز. قائمة Resident Evil 7 الحالية تخص التروفيات الأساسية الـ38 ولا تشمل المحتوى الإضافي.</div>
+</div>
+<section id="pqMapPage" class="pq-map-page hidden" aria-label="صفحة خريطة اللعبة">
+ <div class="pq-map-inner">
+  <div class="top"><div class="brand"><div class="logo">🗺️</div><div><h1 id="pqMapTitle">خريطة اللعبة</h1><p id="pqMapSubtitle">خرائط وأماكن مهمة</p></div></div><button id="pqMapBack" class="secondary" type="button">← رجوع للعبة</button></div>
+  <div class="pq-map-card"><h2 id="pqMapHeading">🗺️ خريطة اللعبة</h2><p id="pqMapDescription" class="sub" style="line-height:1.8">اختر نوع الخريطة التي تريد فتحها. ستفتح الروابط في صفحة خارجية، بينما تبقى صفحة الخريطة هذه مستقلة داخل PlatQuest.</p></div>
+  <div id="pqMapOptions" class="pq-map-options"></div>
+  <div class="pq-map-card"><p class="sub" style="line-height:1.8">تنبيه: هذه روابط للعثور على الخرائط وليست خريطة تفاعلية مدمجة داخل PlatQuest. تأكد من مطابقة نسخة اللعبة والمنصة قبل الاعتماد على مواقع الجمعيات أو الأدلة.</p></div>
+ </div>
+</section>
+<script>
+(function(){
+ const fallback=[{"name":"Resident Evil 7: Biohazard","platform":"PS4","year":2017,"category":"رعب وبقاء","icon":"🧟","trophies":38},{"name":"Marvel’s Spider-Man: Miles Morales","platform":"PS4 / PS5","year":2020,"category":"أكشن ومغامرات","icon":"🕷️","trophies":50},{"name":"Minecraft","platform":"PS4","year":2014,"category":"بقاء وصناعة","icon":"⛏️","trophies":0},{"name":"Persona 5 Royal","platform":"PS4","year":2019,"category":"تقمص أدوار","icon":"🎭","trophies":0},{"name":"Red Dead Redemption II","platform":"PS4","year":2018,"category":"أكشن ومغامرات · عالم مفتوح","icon":"🤠","trophies":0},{"name":"Grand Theft Auto V","platform":"PS4","year":2014,"category":"أكشن · عالم مفتوح · قيادة","icon":"🚘","trophies":0},{"name":"Persona 5","platform":"PS4","year":2017,"category":"تقمص أدوار","icon":"🎭","trophies":0},{"name":"The Witcher 3: Wild Hunt","platform":"PS4","year":2015,"category":"تقمص أدوار · عالم مفتوح","icon":"🐺","trophies":0},{"name":"God of War","platform":"PS4","year":2018,"category":"أكشن ومغامرات","icon":"🪓","trophies":37},{"name":"Resident Evil 2","platform":"PS4","year":2019,"category":"رعب وبقاء","icon":"🧟","trophies":42},{"name":"Uncharted 4: A Thief’s End","platform":"PS4","year":2016,"category":"أكشن ومغامرات","icon":"🧭","trophies":0},{"name":"NieR: Automata","platform":"PS4","year":2017,"category":"أكشن · تقمص أدوار","icon":"🤖","trophies":0},{"name":"The Last of Us: Remastered","platform":"PS4","year":2014,"category":"أكشن · بقاء","icon":"🍄","trophies":0},{"name":"Bloodborne","platform":"PS4","year":2015,"category":"تقمص أدوار · سولزلايك","icon":"🩸","trophies":0},{"name":"Final Fantasy VII: Remake","platform":"PS4","year":2020,"category":"تقمص أدوار","icon":"⚔️","trophies":0},{"name":"The Last of Us: Part II","platform":"PS4","year":2020,"category":"أكشن · بقاء","icon":"🍄","trophies":0},{"name":"Rayman Legends","platform":"PS4","year":2014,"category":"منصات · أكشن","icon":"🟣","trophies":0},{"name":"Tsukihime: A Piece of Blue Glass Moon","platform":"PS4","year":2021,"category":"رواية مرئية · مغامرات","icon":"🌙","trophies":0},{"name":"Odin Sphere: Leifthrasir","platform":"PS4","year":2016,"category":"أكشن · تقمص أدوار","icon":"🛡️","trophies":0},{"name":"Tetris Effect","platform":"PS4","year":2018,"category":"ألغاز · إيقاع","icon":"🧩","trophies":0},{"name":"DOOM Eternal","platform":"PS4","year":2020,"category":"أكشن · تصويب","icon":"👹","trophies":0},{"name":"Journey","platform":"PS4","year":2015,"category":"مغامرات · استكشاف","icon":"🏜️","trophies":0},{"name":"Tony Hawk’s Pro Skater 1 + 2","platform":"PS4","year":2020,"category":"رياضة","icon":"🛹","trophies":0},{"name":"Marvel’s Spider-Man","platform":"PS4","year":2018,"category":"أكشن · عالم مفتوح","icon":"🕸️","trophies":51},{"name":"Dark Souls III","platform":"PS4","year":2016,"category":"تقمص أدوار · سولزلايك","icon":"🔥","trophies":0},{"name":"Sekiro: Shadows Die Twice","platform":"PS4","year":2019,"category":"أكشن · سولزلايك","icon":"🥷","trophies":0},{"name":"Shadow of the Colossus","platform":"PS4","year":2018,"category":"أكشن · مغامرات","icon":"🗿","trophies":0},{"name":"Dragon Quest XI S: Echoes of an Elusive Age – Definitive Edition","platform":"PS4","year":2020,"category":"تقمص أدوار","icon":"🐉","trophies":0},{"name":"Rez Infinite","platform":"PS4","year":2016,"category":"إيقاع · تصويب","icon":"🔺","trophies":0},{"name":"Dark Souls: Remastered","platform":"PS4","year":2018,"category":"تقمص أدوار · سولزلايك","icon":"🔥","trophies":0},{"name":"Ghost of Tsushima","platform":"PS4","year":2020,"category":"أكشن · عالم مفتوح","icon":"⛩️","trophies":0},{"name":"Ōkami","platform":"PS4","year":2017,"category":"أكشن · مغامرات","icon":"🐺","trophies":0},{"name":"NieR: Automata – Game of the YoRHa Edition","platform":"PS4","year":2019,"category":"تقمص أدوار · إصدار خاص","icon":"🤖","trophies":0},{"name":"Dragon Quest XI: Echoes of an Elusive Age","platform":"PS4","year":2017,"category":"تقمص أدوار","icon":"🐉","trophies":0},{"name":"Resident Evil 4 (2023)","platform":"PS4","year":2023,"category":"رعب وبقاء · أكشن","icon":"🧟","trophies":0},{"name":"Ghost of Tsushima: Director’s Cut","platform":"PS4 / PS5","year":2021,"category":"أكشن · عالم مفتوح · إصدار خاص","icon":"⛩️","trophies":0},{"name":"Astro Bot: Rescue Mission","platform":"PS4","year":2018,"category":"منصات · واقع افتراضي","icon":"🤖","trophies":0},{"name":"Divinity: Original Sin II","platform":"PS4","year":2018,"category":"تقمص أدوار · تكتيكي","icon":"🧙","trophies":0},{"name":"13 Sentinels: Aegis Rim","platform":"PS4","year":2019,"category":"مغامرات · استراتيجية","icon":"🤖","trophies":0},{"name":"Marvel’s Spider-Man: Game of the Year Edition","platform":"PS4","year":2019,"category":"أكشن · عالم مفتوح · إصدار خاص","icon":"🕸️","trophies":0},{"name":"It Takes Two","platform":"PS4","year":2021,"category":"مغامرات تعاونية · منصات","icon":"🧸","trophies":0},{"name":"Dreams","platform":"PS4","year":2020,"category":"إبداع · مغامرات","icon":"🎨","trophies":0},{"name":"Monster Hunter: World","platform":"PS4","year":2018,"category":"أكشن · تقمص أدوار","icon":"🐲","trophies":0},{"name":"Dead Cells","platform":"PS4","year":2018,"category":"أكشن · روغلايك · منصات","icon":"☠️","trophies":0},{"name":"Horizon: Zero Dawn","platform":"PS4","year":2017,"category":"تقمص أدوار · عالم مفتوح","icon":"🏹","trophies":0},{"name":"Uncharted: The Lost Legacy","platform":"PS4","year":2017,"category":"أكشن ومغامرات","icon":"🧭","trophies":0},{"name":"Nioh","platform":"PS4","year":2017,"category":"أكشن · تقمص أدوار","icon":"👹","trophies":0},{"name":"AI: The Somnium Files – nirvanA Initiative","platform":"PS4","year":2022,"category":"مغامرات · تحقيق","icon":"🧠","trophies":0},{"name":"BlazBlue: Central Fiction","platform":"PS4","year":2016,"category":"قتال","icon":"🥊","trophies":0},{"name":"Yakuza 0","platform":"PS4","year":2015,"category":"أكشن · مغامرات · تقمص أدوار","icon":"🐉","trophies":0},{"name":"Middle-earth: Shadow of Mordor","platform":"PS4","year":2014,"category":"أكشن · عالم مفتوح","icon":"🗡️","trophies":0},{"name":"Inside","platform":"PS4","year":2016,"category":"ألغاز · منصات","icon":"🌑","trophies":0},{"name":"Resident Evil Code: Veronica X","platform":"PS4","year":2017,"category":"رعب وبقاء","icon":"🧟","trophies":30}];
+ window.addEventListener('error',function(ev){
+   try {
+     const el=document.getElementById('games'); if(!el || el.querySelector('.game')) return;
+     el.innerHTML=fallback.map(g=>'<article class="game"><div class="cover poster"><span class="poster-mark">'+g.icon+'</span><span class="poster-title">'+g.name+'</span><span class="poster-meta">'+g.platform+' · '+(g.year||'GAME')+'</span><span class="platform-badge">'+g.platform+'</span></div><h4>'+g.name+'</h4><div class="sub">'+g.platform+' · '+(g.year||'')+' · '+g.category+'</div><div class="sub">'+g.trophies+' تروفيًا مسجلًا</div></article>').join('');
+     const c=document.getElementById('gameCount'); if(c)c.textContent=fallback.length;
+     let msg=document.getElementById('pqRuntimeWarning'); if(!msg){msg=document.createElement('div');msg.id='pqRuntimeWarning';msg.className='empty';msg.style.cssText='color:#ffd166;border:1px solid #6d5830;border-radius:12px;margin:12px 0';msg.textContent='صار خطأ أثناء تشغيل بعض وظائف التطبيق؛ عرضنا مكتبة الألعاب كحل احتياطي. افتح الملف في Chrome أو حدّث الصفحة.';document.getElementById('library').after(msg)}
+   }catch(e){}
+ });
+})();
+</script>
+<script>
+function safeGet(key){try{return window.localStorage.getItem(key)}catch(e){return null}}
+function safeSet(key,value){try{window.localStorage.setItem(key,value);return true}catch(e){return false}}
+const initialGames=[
+ {id:'re7',name:'Resident Evil 7: Biohazard',platform:'PS4',icon:'🧟',year:2017,category:'رعب وبقاء',rating:8.5,total:38,trophies:[
+  {id:'re7-biosplattered',name:'Biosplattered',desc:'افتح جميع تروفيات اللعبة الأساسية.',type:'platinum'},
+  {id:'re7-shes-alive',name:'She’s Alive',desc:'ابدأ رحلتك في لويزيانا.',type:'bronze'},
+  {id:'re7-welcome-family',name:'Welcome to the Family, Son',desc:'اهرب من بيت الضيافة.',type:'bronze'},
+  {id:'re7-you-aint-gettin-away',name:'You Ain’t Gettin’ Away',desc:'تمكّن من الوصول إلى الساحة الخارجية.',type:'bronze'},
+  {id:'re7-grave-truth',name:'The Grave Will Out the Truth',desc:'اكتشف السر الموجود في البيت القديم.',type:'bronze'},
+  {id:'re7-start-running',name:'You Better Start Running',desc:'اهرب من منزل عائلة بيكر.',type:'bronze'},
+  {id:'re7-into-depths',name:'Into the Depths',desc:'اهرب من السفينة.',type:'bronze'},
+  {id:'re7-end-night',name:'End of the Night',desc:'أكمل النهاية الأولى باختيار علاج ميا.',type:'silver'},
+  {id:'re7-memory-now',name:'Just A Memory Now',desc:'أكمل النهاية الثانية باختيار علاج زوي.',type:'silver'},
+  {id:'re7-playing-safe',name:'Playing it Safe',desc:'أكمل اللعبة على مستوى الصعوبة السهل.',type:'bronze'},
+  {id:'re7-nightmare-over',name:'The Nightmare’s Finally Over',desc:'أكمل اللعبة على مستوى الصعوبة العادي.',type:'bronze'},
+  {id:'re7-daddy-now',name:'Who’s Your Daddy Now?',desc:'أكمل اللعبة على مستوى Madhouse؛ يُفتح عادةً بعد إنهاء القصة مرة.',type:'silver'},
+  {id:'re7-behind-doors',name:'Behind Closed Doors',desc:'أغلق بابًا مفتوحًا بنفسك.',type:'bronze'},
+  {id:'re7-arms-air',name:'Arms in the Air',desc:'صدّ هجوم عدو بالحراسة.',type:'bronze'},
+  {id:'re7-aha',name:'A-ha!',desc:'افحص غرضًا عن قرب واكتشف شيئًا بداخله.',type:'bronze'},
+  {id:'re7-master-unlocking',name:'Master of Unlocking',desc:'استخدم أداة فتح الأقفال لفتح شيء مقفل.',type:'bronze'},
+  {id:'re7-nice-try',name:'Nice Try',desc:'ضع غرضًا غير مناسب على قاعدة إسقاط الظلال.',type:'bronze'},
+  {id:'re7-open-eyes',name:'Open Your Eyes',desc:'استخدم منشّطًا نفسيًا لكشف العناصر القريبة.',type:'bronze'},
+  {id:'re7-in-bag',name:'In the Bag',desc:'اعثر على ترقية تزيد مساحة حمل الأغراض.',type:'bronze'},
+  {id:'re7-things-personal',name:'Things Got Personal',desc:'اقضِ على عدو باستخدام السكين داخل اللعبة.',type:'bronze'},
+  {id:'re7-slash-slash',name:'Slash Slash, Slashity Slash!',desc:'أزل الحشرات عن باب باستخدام السكين داخل اللعبة.',type:'bronze'},
+  {id:'re7-back-off-mrs-b',name:'Back Off, Mrs. B!',desc:'أجبر مارغريت على الابتعاد خلال تجوالها في البيت القديم.',type:'silver'},
+  {id:'re7-duck-life',name:'Duck If You Love Life',desc:'تفادَ هجوم جاك المحدد بالمقصّين بالانحناء أثناء المواجهة.',type:'silver'},
+  {id:'re7-less-more',name:'Less is More',desc:'أسقط عدوين أو أكثر بإصابة واحدة داخل اللعبة.',type:'silver'},
+  {id:'re7-fly-swatter',name:'Fly Swatter',desc:'أوقف قفزة مارغريت بإصابتها أثناء وجودها في الهواء.',type:'silver'},
+  {id:'re7-spicy-meatball',name:'That’s a Spicy Meat-a-ball',desc:'اقضِ على عدو باستخدام قنبلة تحكم عن بُعد داخل اللعبة.',type:'bronze'},
+  {id:'re7-science-fair',name:'1st Place at the Science Fair',desc:'اصنع كل العناصر الممكنة التي تستخدم السائل الكيميائي العادي والقوي.',type:'bronze'},
+  {id:'re7-cant-catch-me',name:'Can’t Catch Me',desc:'أكمل شريط ميا المصوّر من دون أن تكتشفك مارغريت.',type:'bronze'},
+  {id:'re7-out-before-dessert',name:'Out Before Dessert',desc:'أكمل شريط عيد الميلاد المصوّر خلال أقل من 5 دقائق.',type:'silver'},
+  {id:'re7-rewind',name:'Be Kind, Please Rewind',desc:'شاهد جميع أشرطة الفيديو خلال جولة لعب واحدة.',type:'bronze'},
+  {id:'re7-pelicans-pocket',name:'Pelicans in Your Pocket',desc:'اجمع كل العملات العتيقة في جولة على Easy أو Normal (18 عملة).',type:'silver'},
+  {id:'re7-mad-pelicans',name:'Mad Pelicans',desc:'اجمع العملات العتيقة الـ33 كلها في جولة على Madhouse.',type:'silver'},
+  {id:'re7-devil-details',name:'The Devil Is in the Details',desc:'اقرأ جميع الملفات خلال جولة لعب واحدة.',type:'silver'},
+  {id:'re7-everywhere',name:'He’s Here, There, Everywhere!',desc:'حطّم تمثالًا واحدًا من تماثيل Mr. Everywhere.',type:'bronze'},
+  {id:'re7-mr-nowhere',name:'Mr. Nowhere',desc:'حطّم جميع تماثيل Mr. Everywhere وعددها 20.',type:'silver'},
+  {id:'re7-four-hours',name:'Just Get Me Outta Here',desc:'أكمل اللعبة خلال 4 ساعات أو أقل.',type:'gold'},
+  {id:'re7-resource-manager',name:'Resource Manager',desc:'أكمل اللعبة مع فتح صندوق الأغراض 3 مرات كحد أقصى.',type:'gold'},
+  {id:'re7-walk-it-off',name:'Walk it Off',desc:'أكمل اللعبة باستخدام 3 علاجات إسعاف أولي كحد أقصى.',type:'gold'}
+ ]},
+ {id:'spm',name:'Marvel’s Spider-Man: Miles Morales',platform:'PS4 / PS5',icon:'🕷️',year:2020,category:'أكشن ومغامرات',rating:null,total:50,trophies:[
+  {id:'spm-yourself',name:'Be Yourself',desc:'اجمع جميع تروفيات اللعبة الأساسية.',type:'platinum'},
+  {id:'spm-shared-history',name:'Shared History',desc:'استرجع ذكريات ماضي مايلز وفين.',type:'bronze'},
+  {id:'spm-socially-acceptable',name:'Socially Acceptable',desc:'تصفّح موجز التواصل الاجتماعي كاملًا بعد نهاية القصة.',type:'bronze'},
+  {id:'spm-just-beginning',name:'Just the Beginning',desc:'افتح جميع مهارات مايلز.',type:'gold'},
+  {id:'spm-new-home',name:'A New Home',desc:'أكمل جميع أحياء المدينة بنسبة 100%.',type:'gold'},
+  {id:'spm-urban-explorers',name:'Urban Explorers',desc:'اجمع كل كبسولات الزمن.',type:'silver'},
+  {id:'spm-memory-lane',name:'Memory Lane',desc:'اجمع كل البطاقات البريدية.',type:'silver'},
+  {id:'spm-salvager',name:'Salvager',desc:'افتح جميع مخابئ Underground.',type:'silver'},
+  {id:'spm-under-noses',name:'Under Their Noses',desc:'عطّل جميع مختبرات Roxxon.',type:'silver'},
+  {id:'spm-underground-undone',name:'Underground Undone',desc:'عطّل جميع مخابئ Underground.',type:'silver'},
+  {id:'spm-ready-anything',name:'Ready for Anything',desc:'اشترِ جميع الأزياء المتاحة.',type:'silver'},
+  {id:'spm-training-complete',name:'Spider-Training: Complete',desc:'أكمل كل تحديات تدريب Spider-Man مرة واحدة على الأقل.',type:'bronze'},
+  {id:'spm-deep-cuts',name:'Deep Cuts',desc:'اجمع كل عينات الصوت وأعد إنشاء مزيج الأخوين ديفيس.',type:'silver'},
+  {id:'spm-climbing-walls',name:'Climbing the Walls',desc:'نفّذ 25 عملية إسقاط للأعداء من على الجدران.',type:'bronze'},
+  {id:'spm-five-star',name:'Five Star Review',desc:'أكمل جميع طلبات تطبيق FNSM.',type:'bronze'},
+  {id:'spm-crime-master',name:'Crime Master',desc:'أكمل الأهداف الإضافية لكل أنواع الجرائم.',type:'bronze'},
+  {id:'spm-never-saw',name:'Never Saw It Coming',desc:'أنه قاعدة أعداء دون أن يتم اكتشافك.',type:'silver'},
+  {id:'spm-launch-swing-dive',name:'Launch, Swing and Dive',desc:'احصل على تقييم Spectacular أو أعلى في تحدي حركة Spider-Training.',type:'bronze'},
+  {id:'spm-punching-pixels',name:'Punching Pixels',desc:'احصل على تقييم Spectacular أو أعلى في تحدي قتال Spider-Training.',type:'bronze'},
+  {id:'spm-dodging-light',name:'Dodging Light',desc:'احصل على تقييم Spectacular أو أعلى في تحدي التخفي.',type:'bronze'},
+  {id:'spm-come-at-king',name:'Come at the King',desc:'اكشف مؤامرة إجرامية في هارلم.',type:'silver'},
+  {id:'spm-100x-combo',name:'100x Combo!!!',desc:'نفّذ سلسلة ضربات تصل إلى 100 ضربة.',type:'silver'},
+  {id:'spm-petes-first-villain',name:'Pete’s First Villain',desc:'أكمل الاختبار النهائي في التدريب.',type:'bronze'},
+  {id:'spm-kitbash',name:'Kitbash',desc:'اصنع 10 ترقيات.',type:'bronze'},
+  {id:'spm-rhino-rodeo',name:'Rhino Rodeo',desc:'اركب Rhino خلال مركز التسوق في مهمة القصة.',type:'bronze'},
+  {id:'spm-hanging-thread',name:'Hanging By A Thread',desc:'حافظ على تماسك الجسر خلال المهمة.',type:'bronze'},
+  {id:'spm-core-problem',name:'The Core of the Problem',desc:'حقّق في مختبر Roxxon تحت الأرض.',type:'bronze'},
+  {id:'spm-true-deception',name:'True Deception',desc:'أكمل تسلسل الخزنة في مهمة Underground Undercover.',type:'bronze'},
+  {id:'spm-harlem-express',name:'The Harlem Express',desc:'أعد تشغيل القطارات.',type:'bronze'},
+  {id:'spm-veloci-skates',name:'Veloci-Skates',desc:'طارد Tinkerer عبر المدينة.',type:'bronze'},
+  {id:'spm-exploding-bulldozer',name:'Exploding Bulldozer',desc:'اهزم Rhino التابع لـ Roxxon.',type:'bronze'},
+  {id:'spm-family-drama',name:'Family Drama',desc:'اهزم Prowler.',type:'bronze'},
+  {id:'spm-ultimate-sacrifice',name:'Ultimate Sacrifice',desc:'أنقذ هارلم.',type:'bronze'},
+  {id:'spm-rafters',name:'From the Rafters',desc:'نفّذ 25 عملية إسقاط من السقف.',type:'bronze'},
+  {id:'spm-invisible-spider',name:'Invisible Spider',desc:'اهزم 50 عدوًا أثناء استخدام التمويه.',type:'bronze'},
+  {id:'spm-overcharge',name:'Overcharge',desc:'اهزم 100 عدو بهجمات Venom.',type:'bronze'},
+  {id:'spm-up-and-over',name:'Up and Over',desc:'نفّذ قفزة Venom ثم اندفاع Venom على العدو نفسه.',type:'bronze'},
+  {id:'spm-from-downtown',name:'From Downtown',desc:'استخدم اندفاع Venom لرمي عدو وسط ثلاثة أعداء أو أكثر.',type:'bronze'},
+  {id:'spm-rhino-china-shop',name:'Like a Rhino In A China Shop',desc:'حطّم 15 غرضًا قابلًا للكسر أثناء قيادة Rhino داخل مركز التسوق.',type:'bronze'},
+  {id:'spm-competitive-spirit',name:'Competitive Spirit',desc:'تغلّب على فين في لعبة إطلاق الصاروخ المصغّرة.',type:'bronze'},
+  {id:'spm-best-fries',name:'Best Fries in Town',desc:'قدّم احترامك لشخصية أسطورية في Upper West Side.',type:'bronze'},
+  {id:'spm-jjj-proud',name:'JJJ Would Be Proud',desc:'أضف ملصقًا وعدّل الإضاءة في وضع التصوير.',type:'bronze'},
+  {id:'spm-trapped',name:'Trapped',desc:'اهزم 50 عدوًا باستخدام أداة اللغم عن بُعد.',type:'bronze'},
+  {id:'spm-mod-that-suit',name:'Mod that Suit',desc:'اصنع تعديلًا للبدلة.',type:'bronze'},
+  {id:'spm-better-eyes',name:'Look with Better Eyes',desc:'اصنع تعديلًا للواقي البصري.',type:'bronze'},
+  {id:'spm-never-give-up',name:'Never Give Up',desc:'قدّم احترامك عند قبر جيفرسون ديفيس في هارلم.',type:'bronze'},
+  {id:'spm-gift-pete',name:'A Gift From Pete',desc:'احصل على بدلة الهدية من بيتر.',type:'bronze'},
+  {id:'spm-nowhere-hide',name:'Nowhere to Hide',desc:'نفّذ 100 عملية إسقاط بالتخفي.',type:'bronze'},
+  {id:'spm-boat',name:'I’m On A Boat',desc:'اركب القارب المهجور في جنوب Chinatown.',type:'bronze'},
+  {id:'spm-plus-plus',name:'Plus Plus',desc:'أكمل اللعبة في وضع New Game+.',type:'bronze'}
+ ]},
+ {id:'mc',name:'Minecraft',platform:'PS4',icon:'⛏️',year:2014,category:'بقاء وصناعة',rating:null,trophies:[]},
+ {id:'persona-5-royal',name:'Persona 5 Royal',platform:'PS4',icon:'🎭',year:2019,category:'تقمص أدوار',rating:9.3,guideUrl:'https://www.playstationtrophies.org/game/persona-5-royal-na/guide/',trophies:[]},
+ {id:'red-dead-redemption-2',name:'Red Dead Redemption II',platform:'PS4',icon:'🤠',year:2018,category:'أكشن ومغامرات · عالم مفتوح',rating:9.2,guideUrl:'https://www.powerpyx.com/red-dead-redemption-2-trophy-guide-roadmap/',trophies:[]},
+ {id:'gta-v',name:'Grand Theft Auto V',platform:'PS4',icon:'🚘',year:2014,category:'أكشن · عالم مفتوح · قيادة',rating:9.1,guideUrl:'https://www.powerpyx.com/gta-v-trophy-guide-roadmap/',trophies:[]},
+ {id:'persona-5',name:'Persona 5',platform:'PS4',icon:'🎭',year:2017,category:'تقمص أدوار',rating:9.1,guideUrl:'https://www.playstationtrophies.org/game/persona-5-ps4-ps3/guide/',trophies:[]},
+ {id:'witcher-3',name:'The Witcher 3: Wild Hunt',platform:'PS4',icon:'🐺',year:2015,category:'تقمص أدوار · عالم مفتوح',rating:9.1,guideUrl:'https://www.playstationtrophies.org/game/the-witcher-3-wild-hunt-v2/guide/',trophies:[]},
+ {id:'god-of-war-2018',name:'God of War',platform:'PS4',icon:'🪓',year:2018,category:'أكشن ومغامرات',rating:9.1,total:37,trophies:[
+  {id:'gow18-father-son',name:'Father and Son',desc:'اجمع جميع التروفيات الأخرى.',type:'platinum'},
+  {id:'gow18-journey',name:'The Journey Begins',desc:'دافع عن منزلك أمام الغريب.',type:'bronze'},
+  {id:'gow18-new-friend',name:'A New Friend',desc:'نجُ من غابة الساحرة.',type:'bronze'},
+  {id:'gow18-home',name:'Feels Like Home',desc:'اسمح لجنّ الضوء بالعودة إلى موطنهم.',type:'bronze'},
+  {id:'gow18-dragon',name:'Dragon Slayer',desc:'اهزم تنين الجبل.',type:'bronze'},
+  {id:'gow18-consequences',name:'Troubling Consequences',desc:'اهزم ماغني ومودي.',type:'bronze'},
+  {id:'gow18-old-friend',name:'Hello, Old Friend',desc:'استعد شفرات الفوضى.',type:'bronze'},
+  {id:'gow18-promise',name:'Promise Fulfilled',desc:'عالج أتريوس.',type:'bronze'},
+  {id:'gow18-round2',name:'Round 2',desc:'أنقذ أتريوس.',type:'bronze'},
+  {id:'gow18-past-haunts',name:'Past Haunts',desc:'أبحر بالسفينة للخروج من هيلهايم.',type:'bronze'},
+  {id:'gow18-twilight',name:'Twilight Beckons',desc:'اهزم بالدور.',type:'bronze'},
+  {id:'gow18-last-wish',name:'Last Wish',desc:'انثر الرماد في نهاية الرحلة.',type:'gold'},
+  {id:'gow18-beneath-surface',name:'Beneath the Surface',desc:'استكشف كل ما تقدمه بحيرة التسعة.',type:'bronze'},
+  {id:'gow18-death-happened',name:'Death Happened Here',desc:'استكشف فيثوغارد بالكامل.',type:'bronze'},
+  {id:'gow18-trilingual',name:'Trilingual',desc:'تعلّم لغتي موسبيلهايم ونيفلهايم بجمع الشفرات اللازمة.',type:'bronze'},
+  {id:'gow18-dwarven',name:'Dwarven Ingenuity',desc:'طوّر قطعة واحدة من الدرع.',type:'bronze'},
+  {id:'gow18-nice-moves',name:'Nice Moves',desc:'احصل على جوهرة هجوم روني.',type:'bronze'},
+  {id:'gow18-idunn',name:'Iðunn’s Orchard',desc:'طوّر الصحة إلى الحد الأقصى.',type:'silver'},
+  {id:'gow18-quick-tempered',name:'Quick Tempered',desc:'طوّر مقياس الغضب إلى الحد الأقصى.',type:'bronze'},
+  {id:'gow18-best-dressed',name:'Best Dressed',desc:'اصنع زيًا لأتريوس.',type:'bronze'},
+  {id:'gow18-enchanted',name:'Enchanted',desc:'ضع تعويذة في الدرع.',type:'bronze'},
+  {id:'gow18-all-will-fall',name:'All Will Fall',desc:'اقضِ على 1000 عدو خلال اللعب.',type:'bronze'},
+  {id:'gow18-dangerous-skies',name:'Dangerous Skies',desc:'حرّر جميع التنانين.',type:'silver'},
+  {id:'gow18-oil-water',name:'Like Oil and Water',desc:'أكمل جميع طلبات بروك وسندري.',type:'gold'},
+  {id:'gow18-curator',name:'Curator',desc:'اجمع جميع القطع الأثرية.',type:'silver'},
+  {id:'gow18-allfather',name:'Allfather Blinded',desc:'اعثر على جميع غربان أودين.',type:'silver'},
+  {id:'gow18-best-moves',name:'The Best Moves',desc:'طوّر هجومًا رونيًا واحدًا إلى أقصى مستوى.',type:'bronze'},
+  {id:'gow18-worthy',name:'Worthy',desc:'طوّر فأس ليفياثان إلى أقصى مستوى.',type:'silver'},
+  {id:'gow18-why-fight',name:'Why Fight It?',desc:'طوّر شفرات الفوضى إلى أقصى مستوى.',type:'silver'},
+  {id:'gow18-zealot',name:'Path of the Zealot',desc:'احصل على مجموعة درع المسافر.',type:'bronze'},
+  {id:'gow18-primordial',name:'Primordial',desc:'احصل على مجموعة درع القدماء.',type:'bronze'},
+  {id:'gow18-unfinished',name:'Unfinished Business',desc:'ساعد جميع الأرواح التائهة.',type:'silver'},
+  {id:'gow18-treasure',name:'Treasure Hunter',desc:'استخدم خرائط الكنوز للعثور على جميع مواقع الحفر.',type:'silver'},
+  {id:'gow18-truth',name:'The Truth',desc:'اقرأ جميع أضرحة يوتنار.',type:'silver'},
+  {id:'gow18-fire',name:'Fire and Brimstone',desc:'أكمل جميع تجارب موسبيلهايم.',type:'gold'},
+  {id:'gow18-darkness',name:'Darkness and Fog',desc:'اجمع كل الكنوز من الغرفة المركزية في الورشة.',type:'gold'},
+  {id:'gow18-chooser',name:'Chooser of the Slain',desc:'اهزم الفالكيريات التسع.',type:'gold'}
+]},
+ {id:'resident-evil-2',name:'Resident Evil 2',platform:'PS4',icon:'🧟',year:2019,category:'رعب وبقاء',rating:9.1,total:42,trophies:[
+  {id:'re2-raccoon-native',name:'Raccoon City Native',desc:'اجمع جميع تروفيات اللعبة الأساسية.',type:'platinum'},
+  {id:'re2-never-ending-rain',name:'Never-Ending Rain',desc:'اهرب من مركز الشرطة.',type:'bronze'},
+  {id:'re2-hero-emerges',name:'A Hero Emerges',desc:'أكمل قصة ليون.',type:'silver'},
+  {id:'re2-heroine-emerges',name:'A Heroine Emerges',desc:'أكمل قصة كلير.',type:'silver'},
+  {id:'re2-broken-umbrella',name:'Broken Umbrella',desc:'شاهد النهاية الحقيقية.',type:'silver'},
+  {id:'re2-leon-s-kennedy',name:'Leon “S.” Kennedy',desc:'أكمل قصة ليون بتقييم S على Standard أو Hardcore.',type:'gold'},
+  {id:'re2-sizzling-scarlet',name:'Sizzling Scarlet Hero',desc:'أكمل قصة كلير بتقييم S على Standard أو Hardcore.',type:'gold'},
+  {id:'re2-hardcore-rookie',name:'Hardcore Rookie',desc:'أكمل قصة ليون على صعوبة Hardcore.',type:'gold'},
+  {id:'re2-hardcore-college',name:'Hardcore College Student',desc:'أكمل قصة كلير على صعوبة Hardcore.',type:'gold'},
+  {id:'re2-lore-explorer',name:'Lore Explorer',desc:'اقرأ جميع الملفات.',type:'bronze'},
+  {id:'re2-complete-vermin',name:'Complete Vermin Extermination',desc:'حطّم جميع تماثيل Mr. Raccoon.',type:'silver'},
+  {id:'re2-master-unlocking',name:'Master of Unlocking',desc:'افتح جميع الخزائن والأقفال المطلوبة في اللعبة.',type:'silver'},
+  {id:'re2-small-carbon',name:'A Small Carbon Footprint',desc:'أنه جولة لعب مع 14,000 خطوة أو أقل.',type:'silver'},
+  {id:'re2-frugalist',name:'Frugalist',desc:'أكمل اللعبة دون استخدام أي عنصر علاج.',type:'silver'},
+  {id:'re2-minimalist',name:'Minimalist',desc:'أكمل اللعبة دون فتح صندوق الأغراض.',type:'silver'},
+  {id:'re2-city-dead',name:'Welcome to the City of the Dead',desc:'وصل إلى مركز الشرطة.',type:'bronze'},
+  {id:'re2-path-goddess',name:'Path to the Goddess',desc:'حل لغز تمثال الإلهة.',type:'bronze'},
+  {id:'re2-hack-complete',name:'Hack Complete',desc:'أكمل مقطع آدا.',type:'bronze'},
+  {id:'re2-hide-seek',name:'Hide and Seek',desc:'أكمل مقطع شيري.',type:'bronze'},
+  {id:'re2-shower',name:'A Great Need for a Shower',desc:'اهرب من المجاري.',type:'bronze'},
+  {id:'re2-basics-survival',name:'The Basics of Survival',desc:'ادمج عنصرين معًا.',type:'bronze'},
+  {id:'re2-hip-squares',name:'Hip to Add Squares',desc:'زد عدد خانات الحقيبة.',type:'bronze'},
+  {id:'re2-customizer',name:'Customizer',desc:'عدّل أحد الأسلحة.',type:'bronze'},
+  {id:'re2-no-gun',name:'Don’t Need No Stinkin’ Gun',desc:'اقضِ على عدو باستخدام السكين.',type:'bronze'},
+  {id:'re2-eat-this',name:'Eat This!',desc:'نفّذ هجومًا مضادًا باستخدام سلاح فرعي.',type:'bronze'},
+  {id:'re2-hold-em',name:'That’ll Hold ’Em',desc:'سدّ نافذة باستخدام ألواح الخشب.',type:'bronze'},
+  {id:'re2-vermin',name:'Vermin Extermination',desc:'حطّم تمثال Mr. Raccoon واحدًا.',type:'bronze'},
+  {id:'re2-vault-mind',name:'A Vault-like Mind',desc:'افتح خزنة محمولة.',type:'bronze'},
+  {id:'re2-first-break-in',name:'First Break-In',desc:'افتح خزنة ذات قرص أرقام.',type:'bronze'},
+  {id:'re2-bon-appetit',name:'Bon Appétit',desc:'أطلق النار على القنبلة التي ابتلعها عدو.',type:'bronze'},
+  {id:'re2-zombie-roundup',name:'Zombie Roundup',desc:'اقضِ على ثلاثة أعداء دفعة واحدة بسلاح فرعي.',type:'bronze'},
+  {id:'re2-skeet-shooting',name:'Like Skeet Shooting',desc:'أصب كلب زومبي أو Licker وهو في الهواء.',type:'bronze'},
+  {id:'re2-heads-ringin',name:'Keep Their Heads Ringin’',desc:'عطّل حاسة السمع لدى Licker.',type:'bronze'},
+  {id:'re2-hats-off',name:'Hats Off!',desc:'أسقط قبعة Tyrant بإطلاق النار عليها.',type:'bronze'},
+  {id:'re2-gotcha',name:'Gotcha!',desc:'اهزم G المرحلة الثانية باستخدام الرافعة مرة واحدة فقط.',type:'silver'},
+  {id:'re2-treasure-hunter',name:'Treasure Hunter',desc:'اعثر على غرضين مخفيين باستخدام تلميحات الصور.',type:'bronze'},
+  {id:'re2-waist-space',name:'A Waist of Space',desc:'وسّع خانات الحقيبة إلى الحد الأقصى.',type:'bronze'},
+  {id:'re2-super-spy',name:'One Slick Super-spy',desc:'أكمل مقطع آدا باستخدام جهاز EMF Visualizer فقط.',type:'bronze'},
+  {id:'re2-young-escapee',name:'Young Escapee',desc:'اهرب من غرفة النوم خلال 60 ثانية في مقطع شيري.',type:'bronze'},
+  {id:'re2-time-spare',name:'With Time to Spare',desc:'اهزم G المرحلة الرابعة مع بقاء 4 دقائق أو أكثر قبل الانفجار.',type:'bronze'},
+  {id:'re2-blink-eye',name:'In the Blink of an Eye',desc:'اهزم Super Tyrant مع بقاء 5 دقائق أو أكثر قبل الانفجار.',type:'bronze'},
+  {id:'re2-grim-reaper',name:'Grim Reaper',desc:'أكمل طور The 4th Survivor الإضافي.',type:'bronze'}
+ ]},
+ {id:'uncharted-4',name:'Uncharted 4: A Thief’s End',platform:'PS4',icon:'🧭',year:2016,category:'أكشن ومغامرات',rating:9.0,guideUrl:'https://www.playstationtrophies.org/game/uncharted-4/guide/',guideCount:null,trophies:[]},
+ {id:'nier-automata',name:'NieR: Automata',platform:'PS4',icon:'🤖',year:2017,category:'أكشن · تقمص أدوار',rating:8.9,guideUrl:'https://gamefaqs.gamespot.com/ps4/168677-nier-automata/trophies',trophies:[]},
+ {id:'last-of-us-remastered',name:'The Last of Us: Remastered',platform:'PS4',icon:'🍄',year:2014,category:'أكشن · بقاء',rating:8.8,guideUrl:'https://www.playstationtrophies.org/game/the-last-of-us-remastered/guide/',trophies:[]},
+ {id:'bloodborne',name:'Bloodborne',platform:'PS4',icon:'🩸',year:2015,category:'تقمص أدوار · سولزلايك',rating:8.8,guideUrl:'https://gamefaqs.gamespot.com/ps4/805577-bloodborne/faqs/80064/trophies',guideCount:null,trophies:[]},
+ {id:'ff7-remake',name:'Final Fantasy VII: Remake',platform:'PS4',icon:'⚔️',year:2020,category:'تقمص أدوار',rating:8.8,guideUrl:'https://www.powerpyx.com/final-fantasy-vii-remake-trophy-guide-roadmap/',trophies:[]},
+ {id:'last-of-us-2',name:'The Last of Us: Part II',platform:'PS4',icon:'🍄',year:2020,category:'أكشن · بقاء',rating:8.8,trophies:[]},
+ {id:'rayman-legends',name:'Rayman Legends',platform:'PS4',icon:'🟣',year:2014,category:'منصات · أكشن',rating:8.8,trophies:[]},
+ {id:'tsukihime',name:'Tsukihime: A Piece of Blue Glass Moon',platform:'PS4',icon:'🌙',year:2021,category:'رواية مرئية · مغامرات',rating:8.7,trophies:[]},
+ {id:'odin-sphere',name:'Odin Sphere: Leifthrasir',platform:'PS4',icon:'🛡️',year:2016,category:'أكشن · تقمص أدوار',rating:8.7,trophies:[]},
+ {id:'tetris-effect',name:'Tetris Effect',platform:'PS4',icon:'🧩',year:2018,category:'ألغاز · إيقاع',rating:8.7,trophies:[]},
+ {id:'doom-eternal',name:'DOOM Eternal',platform:'PS4',icon:'👹',year:2020,category:'أكشن · تصويب',rating:8.7,trophies:[]},
+ {id:'journey',name:'Journey',platform:'PS4',icon:'🏜️',year:2015,category:'مغامرات · استكشاف',rating:8.7,trophies:[]},
+ {id:'tony-hawk-1-2',name:'Tony Hawk’s Pro Skater 1 + 2',platform:'PS4',icon:'🛹',year:2020,category:'رياضة',rating:8.7,trophies:[]},
+ {id:'marvel-spider-man',name:'Marvel’s Spider-Man',platform:'PS4',icon:'🕸️',year:2018,category:'أكشن · عالم مفتوح',rating:8.7,total:51,trophies:[
+  {id:'msp18-be-greater',name:'Be Greater',desc:'اجمع جميع تروفيات اللعبة الأساسية للحصول على البلاتينيوم.',type:'platinum'},
+  {id:'msp18-superior-spider-man',name:'Superior Spider-Man',desc:'افتح جميع المهارات في شجرة المهارات.',type:'gold'},
+  {id:'msp18-i-heart-manhattan',name:'I Heart Manhattan',desc:'أكمل جميع أحياء المدينة بنسبة 100%، بما يشمل الأنشطة والمقتنيات والمهام المطلوبة.',type:'gold'},
+  {id:'msp18-master-of-masters',name:'Master of Masters',desc:'اهزم Taskmaster بعد إكمال تحدياته المطلوبة.',type:'silver'},
+  {id:'msp18-backpacker',name:'Backpacker',desc:'اجمع حقائب الظهر الـ55 كلها.',type:'silver'},
+  {id:'msp18-cat-prints',name:'Cat Prints',desc:'تعقّب Black Cat وأكمل سلسلة نشاطاتها.',type:'silver'},
+  {id:'msp18-inner-sanctuary',name:'Inner Sanctuary',desc:'اقضِ على جميع مخابئ الشياطين.',type:'silver'},
+  {id:'msp18-all-kings-men',name:'All the King’s Men',desc:'اقضِ على جميع مخابئ Fisk.',type:'silver'},
+  {id:'msp18-mercenary-tactics',name:'Mercenary Tactics',desc:'اقضِ على جميع مواقع Sable.',type:'silver'},
+  {id:'msp18-back-in-slammer',name:'Back in the Slammer',desc:'أكمل جميع معسكرات السجناء.',type:'silver'},
+  {id:'msp18-neighborhood-watch',name:'Neighborhood Watch',desc:'أكمل جميع جرائم الفصائل في أحد الأحياء.',type:'silver'},
+  {id:'msp18-suit-for-all-seasons',name:'A Suit For All Seasons',desc:'اشترِ جميع الأزياء المتاحة في اللعبة الأساسية.',type:'silver'},
+  {id:'msp18-schooled',name:'Schooled',desc:'أكمل جميع مهام الطلاب الفاسدين.',type:'silver'},
+  {id:'msp18-amazing-coverage',name:'Amazing Coverage',desc:'فعّل جميع أبراج المراقبة.',type:'bronze'},
+  {id:'msp18-short-fuse',name:'Short Fuse',desc:'احصل على تقييم Spectacular أو أفضل في تحدي قنابل Taskmaster.',type:'bronze'},
+  {id:'msp18-fists-of-fury',name:'Fists of Fury',desc:'احصل على تقييم Spectacular أو أفضل في تحدي قتال Taskmaster.',type:'bronze'},
+  {id:'msp18-ninja',name:'Ninja',desc:'احصل على تقييم Spectacular أو أفضل في تحدي التخفي لدى Taskmaster.',type:'bronze'},
+  {id:'msp18-spy-hunter',name:'Spy Hunter',desc:'احصل على تقييم Spectacular أو أفضل في تحدي الطائرات المسيّرة لدى Taskmaster.',type:'bronze'},
+  {id:'msp18-challenge-finder',name:'Challenge Finder',desc:'أكمل كل تحديات Taskmaster الموجودة في المدينة مرة واحدة.',type:'bronze'},
+  {id:'msp18-r-and-d',name:'R&D',desc:'أكمل جميع محطات الأبحاث.',type:'bronze'},
+  {id:'msp18-demons-emerge',name:'Demons Emerge',desc:'أكمل الفصل الأول من القصة.',type:'bronze'},
+  {id:'msp18-six-assemble',name:'The Six Assemble',desc:'أكمل الفصل الثاني من القصة.',type:'bronze'},
+  {id:'msp18-end-game',name:'End Game',desc:'أكمل الفصل الثالث من القصة.',type:'bronze'},
+  {id:'msp18-science-ftw',name:'Science FTW!',desc:'اصنع 15 ترقية.',type:'bronze'},
+  {id:'msp18-knocking-down-kingpin',name:'Knocking Down Kingpin',desc:'اهزم Fisk.',type:'bronze'},
+  {id:'msp18-staying-positive',name:'Staying Positive',desc:'اهزم Li.',type:'bronze'},
+  {id:'msp18-grounded',name:'Grounded',desc:'اهزم Electro وVulture.',type:'bronze'},
+  {id:'msp18-sting-and-smash',name:'Sting and Smash',desc:'اهزم Scorpion وRhino.',type:'bronze'},
+  {id:'msp18-tombstone-takedown',name:'Tombstone Takedown',desc:'اهزم Tombstone.',type:'bronze'},
+  {id:'msp18-shock-and-awe',name:'Shock and Awe',desc:'اهزم Shocker.',type:'bronze'},
+  {id:'msp18-bird-bane',name:'Bird Bane',desc:'أزعج أسراب الحمام 500 مرة.',type:'bronze'},
+  {id:'msp18-king-of-swing',name:'King of Swing',desc:'أكمل معيار التنقل Traversal من المستوى الأول.',type:'bronze'},
+  {id:'msp18-and-stay-down',name:'And Stay Down!',desc:'أكمل معيار القتال Combat من المستوى الأول.',type:'bronze'},
+  {id:'msp18-pigeon-hunter',name:'Pigeon Hunter',desc:'أمسك جميع حمامات Howard.',type:'bronze'},
+  {id:'msp18-hug-it-out',name:'Hug It Out',desc:'اجعل 10 أزواج من الأعداء يصطدمون ببعضهم باستخدام ألغام الفخ.',type:'bronze'},
+  {id:'msp18-friendly-neighborhood',name:'Friendly Neighborhood Spider-Man',desc:'أكمل جميع المهام الجانبية.',type:'bronze'},
+  {id:'msp18-scientific-method',name:'The Scientific Method',desc:'اصنع أول ترقية لك.',type:'bronze'},
+  {id:'msp18-spider-sensible',name:'Spider-Sensible',desc:'نفّذ تفاديًا مثاليًا لعشر هجمات.',type:'bronze'},
+  {id:'msp18-overdrive',name:'Overdrive',desc:'أكمل 10 عمليات إسقاط لمركبات خلال جرائم المطاردة.',type:'bronze'},
+  {id:'msp18-with-great-power',name:'With Great Power…',desc:'قدّم احترامك عند قبر Ben Parker.',type:'bronze'},
+  {id:'msp18-hero-for-higher',name:'Hero for Higher',desc:'قف على قمة برج Avengers.',type:'bronze'},
+  {id:'msp18-sightseeing',name:'Sightseeing',desc:'صوّر جميع المعالم الموجودة على الخريطة.',type:'bronze'},
+  {id:'msp18-born-to-ride',name:'Born to Ride',desc:'استخدم مترو الأنفاق للسفر السريع خمس مرات.',type:'bronze'},
+  {id:'msp18-sticky-and-tricky',name:'Sticky and Tricky',desc:'نفّذ أربع حركات بهلوانية مختلفة متتالية قبل الهبوط.',type:'bronze'},
+  {id:'msp18-snappy-dresser',name:'Snappy Dresser',desc:'ارتدِ خمسة أزياء جديدة مختلفة.',type:'bronze'},
+  {id:'msp18-arachnophobia',name:'Arachnophobia',desc:'نفّذ 75 عملية إسقاط بالتخفي.',type:'bronze'},
+  {id:'msp18-lost-and-found',name:'Lost and Found',desc:'اجمع خمس حقائب ظهر.',type:'bronze'},
+  {id:'msp18-spider-man-about-town',name:'Spider-Man About Town',desc:'حيِّ عشرة مواطنين في المدينة.',type:'bronze'},
+  {id:'msp18-cats-out-of-bag',name:'Cat’s Out of the Bag',desc:'اجمع أحد مقتنيات Black Cat.',type:'bronze'},
+  {id:'msp18-bit-of-fixer-upper',name:'A Bit of a Fixer-Upper',desc:'أكمل جميع المشاريع الاختيارية في المختبر.',type:'bronze'},
+  {id:'msp18-ace-the-base',name:'Ace the Base',desc:'أكمل جميع الأهداف داخل أحد معسكرات الأعداء.',type:'bronze'}
+ ]},
+ {id:'dark-souls-3',name:'Dark Souls III',platform:'PS4',icon:'🔥',year:2016,category:'تقمص أدوار · سولزلايك',rating:8.7,trophies:[]},
+ {id:'sekiro',name:'Sekiro: Shadows Die Twice',platform:'PS4',icon:'🥷',year:2019,category:'أكشن · سولزلايك',rating:8.7,trophies:[]},
+ {id:'shadow-colossus',name:'Shadow of the Colossus',platform:'PS4',icon:'🗿',year:2018,category:'أكشن · مغامرات',rating:8.7,trophies:[]},
+ {id:'dq11s',name:'Dragon Quest XI S: Echoes of an Elusive Age – Definitive Edition',platform:'PS4',icon:'🐉',year:2020,category:'تقمص أدوار',rating:8.7,trophies:[]},
+ {id:'rez-infinite',name:'Rez Infinite',platform:'PS4',icon:'🔺',year:2016,category:'إيقاع · تصويب',rating:8.7,trophies:[]},
+ {id:'dark-souls-remastered',name:'Dark Souls: Remastered',platform:'PS4',icon:'🔥',year:2018,category:'تقمص أدوار · سولزلايك',rating:8.7,trophies:[]},
+ {id:'ghost-tsushima',name:'Ghost of Tsushima',platform:'PS4',icon:'⛩️',year:2020,category:'أكشن · عالم مفتوح',rating:8.7,trophies:[]},
+ {id:'okami',name:'Ōkami',platform:'PS4',icon:'🐺',year:2017,category:'أكشن · مغامرات',rating:8.6,trophies:[]},
+ {id:'nier-automata-yorha',name:'NieR: Automata – Game of the YoRHa Edition',platform:'PS4',icon:'🤖',year:2019,category:'تقمص أدوار · إصدار خاص',rating:8.6,trophies:[]},
+ {id:'dq11',name:'Dragon Quest XI: Echoes of an Elusive Age',platform:'PS4',icon:'🐉',year:2017,category:'تقمص أدوار',rating:8.6,trophies:[]},
+ {id:'resident-evil-4-2023',name:'Resident Evil 4 (2023)',platform:'PS4',icon:'🧟',year:2023,category:'رعب وبقاء · أكشن',rating:8.6,trophies:[]},
+ {id:'ghost-tsushima-directors-cut',name:'Ghost of Tsushima: Director’s Cut',platform:'PS4 / PS5',icon:'⛩️',year:2021,category:'أكشن · عالم مفتوح · إصدار خاص',rating:8.6,trophies:[]},
+ {id:'astro-bot-rescue-mission',name:'Astro Bot: Rescue Mission',platform:'PS4',icon:'🤖',year:2018,category:'منصات · واقع افتراضي',rating:8.6,trophies:[]},
+ {id:'divinity-original-sin-2',name:'Divinity: Original Sin II',platform:'PS4',icon:'🧙',year:2018,category:'تقمص أدوار · تكتيكي',rating:8.6,trophies:[]},
+ {id:'13-sentinels',name:'13 Sentinels: Aegis Rim',platform:'PS4',icon:'🤖',year:2019,category:'مغامرات · استراتيجية',rating:8.6,trophies:[]},
+ {id:'marvel-spider-man-goty',name:'Marvel’s Spider-Man: Game of the Year Edition',platform:'PS4',icon:'🕸️',year:2019,category:'أكشن · عالم مفتوح · إصدار خاص',rating:8.6,trophies:[]},
+ {id:'it-takes-two',name:'It Takes Two',platform:'PS4',icon:'🧸',year:2021,category:'مغامرات تعاونية · منصات',rating:8.6,trophies:[]},
+ {id:'dreams',name:'Dreams',platform:'PS4',icon:'🎨',year:2020,category:'إبداع · مغامرات',rating:8.6,trophies:[]},
+ {id:'monster-hunter-world',name:'Monster Hunter: World',platform:'PS4',icon:'🐲',year:2018,category:'أكشن · تقمص أدوار',rating:8.6,trophies:[]},
+ {id:'dead-cells',name:'Dead Cells',platform:'PS4',icon:'☠️',year:2018,category:'أكشن · روغلايك · منصات',rating:8.5,trophies:[]},
+ {id:'horizon-zero-dawn',name:'Horizon: Zero Dawn',platform:'PS4',icon:'🏹',year:2017,category:'تقمص أدوار · عالم مفتوح',rating:8.5,trophies:[]},
+ {id:'uncharted-lost-legacy',name:'Uncharted: The Lost Legacy',platform:'PS4',icon:'🧭',year:2017,category:'أكشن ومغامرات',rating:8.5,trophies:[]},
+ {id:'nioh',name:'Nioh',platform:'PS4',icon:'👹',year:2017,category:'أكشن · تقمص أدوار',rating:8.5,trophies:[]},
+ {id:'ai-somnium-initiative',name:'AI: The Somnium Files – nirvanA Initiative',platform:'PS4',icon:'🧠',year:2022,category:'مغامرات · تحقيق',rating:8.5,trophies:[]},
+ {id:'blazblue-central-fiction',name:'BlazBlue: Central Fiction',platform:'PS4',icon:'🥊',year:2016,category:'قتال',rating:8.5,trophies:[]},
+ {id:'yakuza-0',name:'Yakuza 0',platform:'PS4',icon:'🐉',year:2015,category:'أكشن · مغامرات · تقمص أدوار',rating:8.5,trophies:[]},
+ {id:'shadow-of-mordor',name:'Middle-earth: Shadow of Mordor',platform:'PS4',icon:'🗡️',year:2014,category:'أكشن · عالم مفتوح',rating:8.5,trophies:[]},
+ {id:'inside',name:'Inside',platform:'PS4',icon:'🌑',year:2016,category:'ألغاز · منصات',rating:8.5,trophies:[]}
+ ,
+ {id:'resident-evil-code-veronica-x',name:'Resident Evil Code: Veronica X',platform:'PS4',icon:'🧟',year:2017,category:'رعب وبقاء',rating:null,total:30,guideUrl:'https://www.playstationtrophies.org/game/resident-evil-code-veronica-x-ps4/guide/',trophies:[
+  {id:'recvx-slayer-of-evil',name:'Slayer of Evil',desc:'افتح جميع تروفيات اللعبة للحصول على البلاتينيوم.',type:'platinum'},
+  {id:'recvx-terror-begins',name:'The Terror Begins',desc:'اخرج من المقبرة في بداية القصة.',type:'bronze'},
+  {id:'recvx-changed-father',name:'A Changed Father',desc:'شاهد الحدث القصصي الذي يواجه فيه ستيف والده المتحوّل.',type:'bronze'},
+  {id:'recvx-beyond-shades',name:'Beyond the Shades',desc:'قابل ويسكر خلال أحداث القصة.',type:'bronze'},
+  {id:'recvx-fallen-tyrant',name:'The Fallen Tyrant',desc:'اهزم الـTyrant أثناء أحداث الطائرة.',type:'silver'},
+  {id:'recvx-prisoner',name:'The Prisoner Who Lost Everything',desc:'اهزم Nosferatu وأنهِ المواجهة معه.',type:'silver'},
+  {id:'recvx-frozen-land',name:'To The Frozen Land',desc:'ابدأ البحث عن كلير بالتوجه إلى القارة القطبية خلال القصة.',type:'bronze'},
+  {id:'recvx-arrogant-queen',name:'The Arrogant Queen',desc:'اهزم Alexia وأنهِ المواجهة النهائية.',type:'gold'},
+  {id:'recvx-duty-humanity',name:'Duty and Humanity',desc:'سلّم الدواء إلى رودريغو عندما تتاح الفرصة في القصة.',type:'bronze'},
+  {id:'recvx-weapon-crazy',name:'Weapon Crazy',desc:'احصل على قاذف الصواريخ من خلال نمط Battle Game.',type:'gold'},
+  {id:'recvx-young-lady',name:'From The Young Lady',desc:'ارجع للتحدث مع كلير بعد أن تتحكم بستيف في الجزء المحدد من القصة.',type:'gold'},
+  {id:'recvx-green-giant',name:'The Green Giant',desc:'تجاوز المواجهة القصصية مع ستيف في القاعدة القطبية.',type:'bronze'},
+  {id:'recvx-no-time',name:'No Time To Kill',desc:'أكمل القصة في أقل من أربع ساعات.',type:'gold'},
+  {id:'recvx-cold-here',name:'Is It Cold In Here?',desc:'في Battle Game، استخدم كلير بالزي البديل ومن منظور الشخص الثالث، وانتظر حتى ترتجف من البرد داخل غرفة التجميد.',type:'bronze'},
+  {id:'recvx-mirror-mirror',name:'Mirror Mirror',desc:'في Battle Game، وبمنظور الشخص الثالث مع كريس، انظر إلى المرآة المكسورة في غرفة تبديل الملابس.',type:'bronze'},
+  {id:'recvx-eye-tiger',name:'Eye of the Tiger',desc:'في Battle Game، وبمنظور الشخص الثالث مع كريس، انظر إلى تمثال النمر في الممر الطبي.',type:'bronze'},
+  {id:'recvx-no-ones',name:"We Don't Sell 1-Ups",desc:'في Battle Game، وبمنظور الشخص الثالث مع ستيف، استخدم آلة المشروبات خارج غرفة تبديل الملابس.',type:'bronze'},
+  {id:'recvx-i-spy',name:'I Spy',desc:'في Battle Game، وبمنظور الشخص الثالث مع ويسكر، انظر إلى التمثال ذي العين الواحدة في العيادة.',type:'bronze'},
+  {id:'recvx-anything-you-can-do',name:'Anything You Can Do, I Can Do Better...',desc:'احصل على رتبة A بشخصية كلير في Battle Game.',type:'silver'},
+  {id:'recvx-anything-better',name:'I Can Do Anything Better Than You',desc:'احصل على رتبة A بشخصية كريس في Battle Game.',type:'silver'},
+  {id:'recvx-alternate',name:'A is for Alternate',desc:'احصل على رتبة A بشخصية كلير ذات الزي البديل في Battle Game.',type:'silver'},
+  {id:'recvx-rockfort-finest',name:"Rockfort's Finest",desc:'احصل على رتبة A بشخصية ستيف في Battle Game.',type:'silver'},
+  {id:'recvx-power-hungry',name:'Power Hungry',desc:'احصل على رتبة A بشخصية ويسكر في Battle Game.',type:'silver'},
+  {id:'recvx-battle-master',name:'Battle Master',desc:'احصل على Linear Launcher من خلال Battle Game.',type:'gold'},
+  {id:'recvx-feeling-blue',name:'Feeling Blue',desc:'اجمع جميع الملفات المصنفة باللون الأزرق أثناء القصة.',type:'silver'},
+  {id:'recvx-yellow-files',name:"It's Not All Dark and Gloomy",desc:'اجمع جميع الملفات المصنفة باللون الأصفر أثناء القصة.',type:'silver'},
+  {id:'recvx-reading-red',name:'Reading Red',desc:'اجمع جميع الملفات المصنفة باللون الأحمر أثناء القصة.',type:'silver'},
+  {id:'recvx-tactical-upgrades',name:'Tactical Upgrades',desc:'طوّر مسدس M93R عبر خدمة تعديل السلاح أثناء القصة.',type:'bronze'},
+  {id:'recvx-packing-punch',name:'Packing a Punch',desc:'عدّل مسدس Glock 17 عبر خدمة تعديل السلاح أثناء القصة.',type:'bronze'},
+  {id:'recvx-decorative-deadly',name:'Decorative But Deadly',desc:'احصل على مسدسي Gold Lugers.',type:'bronze'}
+ ]}
+
+
+ ,{id:'spider-man-2-ps5',name:'Marvel’s Spider-Man 2',platform:'PS5',icon:'🕷️',year:2023,category:'أكشن · عالم مفتوح',rating:9.0,guideUrl:'https://www.powerpyx.com/marvels-spider-man-2-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'gow-ragnarok-ps5',name:'God of War Ragnarök',platform:'PS4 / PS5',icon:'🪓',year:2022,category:'أكشن · مغامرات',rating:9.2,guideUrl:'https://www.powerpyx.com/god-of-war-ragnarok-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'resident-evil-4-remake',name:'Resident Evil 4',platform:'PS4 / PS5',icon:'🧟',year:2023,category:'رعب وبقاء · أكشن',rating:9.0,guideUrl:'https://www.powerpyx.com/resident-evil-4-remake-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'elden-ring-ps',name:'Elden Ring',platform:'PS4 / PS5',icon:'⚔️',year:2022,category:'أكشن · تقمص أدوار',rating:9.5,guideUrl:'https://www.powerpyx.com/elden-ring-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'black-myth-wukong',name:'Black Myth: Wukong',platform:'PS5',icon:'🐒',year:2024,category:'أكشن · مغامرات',rating:9.0,guideUrl:'https://www.powerpyx.com/black-myth-wukong-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'the-last-of-us-part-1',name:'The Last of Us Part I',platform:'PS5',icon:'🍄',year:2022,category:'أكشن · رعب وبقاء',rating:9.0,guideUrl:'https://www.powerpyx.com/the-last-of-us-part-1-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'horizon-forbidden-west',name:'Horizon Forbidden West',platform:'PS4 / PS5',icon:'🏹',year:2022,category:'أكشن · عالم مفتوح',rating:9.0,guideUrl:'https://www.powerpyx.com/horizon-forbidden-west-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'ghost-of-tsushima-directors-cut',name:'Ghost of Tsushima: Director’s Cut',platform:'PS4 / PS5',icon:'⛩️',year:2021,category:'أكشن · عالم مفتوح',rating:9.2,guideUrl:'https://www.powerpyx.com/ghost-of-tsushima-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'sekiro-shadows-die-twice',name:'Sekiro: Shadows Die Twice',platform:'PS4',icon:'🥷',year:2019,category:'أكشن · تحدي',rating:9.5,guideUrl:'https://www.powerpyx.com/sekiro-shadows-die-twice-trophy-guide-roadmap/',trophies:[]}
+ ,{id:'astro-bot-2024',name:'Astro Bot',platform:'PS5',icon:'🤖',year:2024,category:'منصات · مغامرات',rating:9.5,guideUrl:'https://www.powerpyx.com/astro-bot-trophy-guide-roadmap/',trophies:[]}
+];
+let savedGames=null;try{savedGames=JSON.parse(safeGet('pq_games')||'null')}catch(e){savedGames=null}if(!Array.isArray(savedGames))savedGames=null;
+// Keep the player's existing progress, while adding the new catalogue without duplicates.
+let games=initialGames.map(g=>{const old=savedGames?.find(x=>x.id===g.id);if(!old)return g;const oldDone=new Map((old.trophies||[]).map(t=>[t.id,!!t.done]));return {...g,...old,year:g.year,category:g.category,rating:g.rating,trophies:g.trophies.map(t=>({...t,done:oldDone.get(t.id)??!!t.done}))};});
+if(savedGames) savedGames.forEach(old=>{if(!games.some(g=>g.id===old.id))games.push(old)});
+let activeId=games[0]?.id;
+const UI_LANGS={
+ ar:{tagline:'رحلتك من أول تروفي إلى البلاتينيوم',language:'اللغة',beta:'نسخة تجريبية · Beta',eyebrow:'كل تروفي يقربك من الهدف',heroTitle:'اصطد البلاتينيوم،<br>تروفي وراء تروفي.',heroText:'مكتبة ألعاب، متابعة تقدمك، ومساعد يساعدك تفهم التروفيات الصعبة وتخطط لرحلتك.',explore:'استكشف المكتبة ←',statGames:'ألعاب في المكتبة',statTrophies:'تروفيات مسجلة',statProgress:'تقدمك في التروفيات المسجلة',library:'🎮 مكتبة الألعاب',search:'ابحث عن لعبة...',allPlatforms:'كل الأجهزة',sortDefault:'الترتيب الافتراضي',sortRating:'الأعلى تقييمًا',sortAZ:'الاسم أ–ي',sortYear:'الأحدث إصدارًا',retry:'إعادة تحميل الصور',trophyTitle:'🏆 تروفيات اللعبة',chooseGame:'اختر لعبة من المكتبة لعرض التروفيات.',assistant:'🤖 مساعد PlatQuest',assistantSub:'اسأل عن التروفيات أو خطط لرحلتك نحو البلاتينيوم.',quickPlan:'خطة البلاتينيوم',quickMissable:'تروفيات قابلة للفوات',quickProgress:'متابعة التقدم',welcome:'هلا بصياد البلاتينيوم! 🏆 اختر لعبة من المكتبة، وعلّم التروفيات التي أنجزتها. أقدر أساعدك بالتخطيط والإرشادات العامة. هذه نسخة أولية، وبعض معلومات التروفيات ما زالت قيد التحقق.',question:'اكتب سؤالك هنا...',send:'إرسال',emptySearch:'ما لقينا لعبة بهذا البحث.',rated:'⭐ تقييم المصدر:',noRating:'التقييم غير متوفر',entered:'تروفيًا مدخلًا',notMerged:'قائمة التروفيات غير مدمجة بعد',showTrophies:'عرض التروفيات',trophyGuide:'التروفيات والدليل',notStarted:'لم يبدأ التتبع',retryFailed:'تعذر تحميل الصورة الخارجية · غلاف بديل',imageLabel:'صورة تعريفية للعبة',notOfficial:'صورة مرجعية من صفحة اللعبة · قد لا تكون الغلاف الرسمي المطابق',noList:'اللعبة موجودة في مكتبة PlatQuest، لكن قائمة التروفيات الكاملة لم تُدمج بعد. استخدم روابط الأدلة الخاصة باللعبة والمنصة.',searchList:'🔎 البحث عن قائمة التروفيات',guideSite:'🏆 أدلة PlayStationTrophies',copyName:'نسخ اسم اللعبة',copied:'تم النسخ',externalNote:'تحقق من تطابق إصدار اللعبة والمنصة، وافصل تروفيات اللعبة الأساسية عن الإضافات. الروابط الخارجية لا تعني أن القائمة مدمجة داخل التطبيق.',bronze:'🥉 برونزي',silver:'🥈 فضي',gold:'🥇 ذهبي',platinum:'💎 بلاتينيوم',note:'حالة بيانات المكتبة (مراجعة 18 أكتوبر 2026): تحتوي النسخة الحالية على 53 لعبة. توجد قوائم تروفيات مدخلة داخل التطبيق لست ألعاب: Resident Evil 7 (38)، وResident Evil 2 (42)، وMarvel’s Spider-Man: Miles Morales (50)، وGod of War (2018) (37)، وMarvel’s Spider-Man (51)، وResident Evil Code: Veronica X (30). هذه القوائم مدخلة مبدئيًا وليست معتمدة نهائيًا قبل مطابقة الأسماء والشروط مع مصدر موثوق وإصدار اللعبة والمنصة. الألعاب الـ47 الأخرى لا تملك قوائم تروفيات داخلية مكتملة في هذه النسخة؛ المتاح لها روابط أدلة/بحث خارجية فقط، ولا تُحتسب تروفياتها في نسبة الإنجاز. الصور تُجلب من صفحات ويكيبيديا عند توفرها، لذلك قد تكون صورًا تعريفية وليست أغلفة رسمية مطابقة لكل إصدار؛ عند تعذر التحميل يظهر غلاف بديل ويمكن الضغط على «إعادة تحميل الصور». هذا فهرس أولي وليس جميع ألعاب PlayStation الموجودة عالميًا، ولا يرتبط بحساب PlayStation Network. تقدمك يُحفظ في هذا المتصفح على هذا الجهاز. قائمة Resident Evil 7 الحالية تخص التروفيات الأساسية الـ38 ولا تشمل المحتوى الإضافي.'},
+ en:{tagline:'From your first trophy to Platinum',language:'Language',beta:'Beta version',eyebrow:'Every trophy brings you closer',heroTitle:'Hunt the Platinum,<br>one trophy at a time.',heroText:'A game library, progress tracking, and an assistant to help you understand tough trophies and plan your hunt.',explore:'Explore library →',statGames:'Games in library',statTrophies:'Tracked trophies',statProgress:'Progress in tracked trophies',library:'🎮 Game Library',search:'Search games...',allPlatforms:'All platforms',sortDefault:'Default order',sortRating:'Top rated',sortAZ:'Name A–Z',sortYear:'Newest release',retry:'Reload artwork',trophyTitle:'🏆 Game trophies',chooseGame:'Choose a game from the library to view trophies.',assistant:'🤖 PlatQuest Assistant',assistantSub:'Ask about trophies or plan your Platinum run.',quickPlan:'Platinum plan',quickMissable:'Missable trophies',quickProgress:'Track progress',welcome:'Welcome, trophy hunter! 🏆 Choose a game and tick off trophies you have earned. This early version offers planning help; some trophy data is still being verified.',question:'Type your question...',send:'Send',emptySearch:'No games matched your search.',rated:'⭐ Source rating:',noRating:'Rating unavailable',entered:'trophies entered',notMerged:'Trophy list not integrated yet',showTrophies:'View trophies',trophyGuide:'Trophies & guide',notStarted:'Not started',retryFailed:'External image unavailable · fallback cover',imageLabel:'Image for',notOfficial:'Reference image from a game page · may not be the exact official cover',noList:'This game is in the PlatQuest library, but its complete trophy list has not been integrated yet. Use the game- and platform-specific guide links below rather than relying on unverified trophy details.',searchList:'🔎 Search trophy list',guideSite:'🏆 PlayStationTrophies guides',copyName:'Copy game name',copied:'Copied',externalNote:'Check that the game edition and platform match, and separate base-game trophies from DLC. External links do not mean the list has been integrated.',bronze:'🥉 Bronze',silver:'🥈 Silver',gold:'🥇 Gold',platinum:'💎 Platinum',note:'Note: This is an early library of 53 games, including an integrated 30-trophy list for Resident Evil Code: Veronica X. Images are fetched from Wikipedia pages when available and may be reference images rather than exact official cover art. A fallback cover appears if an image fails. This is an initial catalogue, not every PlayStation game worldwide. It is not connected to PlayStation Network. Some games have integrated trophy lists; others link to external guides until their lists are verified. Progress is saved in this browser on this device. Resident Evil 7 DLC is not included in the base list of 38 trophies.'},
+ es:{tagline:'De tu primer trofeo al Platino',language:'Idioma',beta:'Versión beta',eyebrow:'Cada trofeo te acerca a la meta',heroTitle:'Ve a por el Platino,<br>trofeo a trofeo.',heroText:'Biblioteca de juegos, seguimiento del progreso y ayuda para planificar tus trofeos.',explore:'Explorar biblioteca →',statGames:'Juegos en biblioteca',statTrophies:'Trofeos registrados',statProgress:'Progreso registrado',library:'🎮 Biblioteca de juegos',search:'Buscar juegos...',allPlatforms:'Todas las plataformas',sortDefault:'Orden predeterminado',sortRating:'Mejor valorados',sortAZ:'Nombre A–Z',sortYear:'Lanzamientos recientes',retry:'Recargar imágenes',trophyTitle:'🏆 Trofeos del juego',chooseGame:'Elige un juego para ver sus trofeos.',assistant:'🤖 Asistente PlatQuest',assistantSub:'Pregunta sobre trofeos o planifica tu Platino.',quickPlan:'Plan de Platino',quickMissable:'Trofeos perdibles',quickProgress:'Seguir progreso',welcome:'¡Hola, cazatrofeos! 🏆 Elige un juego y marca los trofeos conseguidos. Esta versión inicial ofrece ayuda general; algunos datos aún se están verificando.',question:'Escribe tu pregunta...',send:'Enviar',emptySearch:'No se encontraron juegos.',rated:'⭐ Valoración de la fuente:',noRating:'Valoración no disponible',entered:'trofeos registrados',notMerged:'Lista de trofeos aún no integrada',showTrophies:'Ver trofeos',trophyGuide:'Trofeos y guía',notStarted:'Sin empezar',retryFailed:'Imagen externa no disponible · portada alternativa',imageLabel:'Imagen del juego',notOfficial:'Imagen de referencia · puede no ser la portada oficial exacta',noList:'El juego está en PlatQuest, pero su lista completa aún no se ha integrado. Usa las guías externas específicas de juego y plataforma.',searchList:'🔎 Buscar lista de trofeos',guideSite:'🏆 Guías de PlayStationTrophies',copyName:'Copiar nombre',copied:'Copiado',externalNote:'Comprueba la edición y plataforma, y separa los trofeos del juego base del DLC. Los enlaces externos no significan que la lista esté integrada.',bronze:'🥉 Bronce',silver:'🥈 Plata',gold:'🥇 Oro',platinum:'💎 Platino',note:'Nota: esta biblioteca contiene los 50 juegos de la primera tanda y dos del prototipo anterior. Las imágenes pueden ser ilustrativas, no portadas oficiales exactas. Es un catálogo inicial y no incluye todos los juegos de PlayStation. No está conectado a PSN. Algunas listas están integradas; otras enlazan a guías externas hasta verificarlas. El progreso se guarda en este navegador. El DLC de Resident Evil 7 no está incluido en la lista base de 38 trofeos.'},
+ fr:{tagline:'De votre premier trophée au Platine',language:'Langue',beta:'Version bêta',eyebrow:'Chaque trophée vous rapproche du but',heroTitle:'Visez le Platine,<br>trophée après trophée.',heroText:'Bibliothèque de jeux, suivi de progression et aide pour planifier votre chasse aux trophées.',explore:'Explorer la bibliothèque →',statGames:'Jeux dans la bibliothèque',statTrophies:'Trophées suivis',statProgress:'Progression suivie',library:'🎮 Bibliothèque de jeux',search:'Rechercher des jeux...',allPlatforms:'Toutes les plateformes',sortDefault:'Ordre par défaut',sortRating:'Mieux notés',sortAZ:'Nom A–Z',sortYear:'Sorties récentes',retry:'Recharger les images',trophyTitle:'🏆 Trophées du jeu',chooseGame:'Choisissez un jeu pour voir ses trophées.',assistant:'🤖 Assistant PlatQuest',assistantSub:'Posez une question ou planifiez votre Platine.',quickPlan:'Plan Platine',quickMissable:'Trophées manquables',quickProgress:'Suivi de progression',welcome:'Bienvenue, chasseur de trophées ! 🏆 Choisissez un jeu et cochez les trophées obtenus. Cette version initiale propose une aide générale ; certaines données restent à vérifier.',question:'Écrivez votre question...',send:'Envoyer',emptySearch:'Aucun jeu trouvé.',rated:'⭐ Note de la source :',noRating:'Note indisponible',entered:'trophées saisis',notMerged:'Liste des trophées non intégrée',showTrophies:'Voir les trophées',trophyGuide:'Trophées et guide',notStarted:'Pas commencé',retryFailed:'Image externe indisponible · couverture de remplacement',imageLabel:'Image du jeu',notOfficial:'Image illustrative · pas nécessairement la couverture officielle exacte',noList:'Ce jeu est dans PlatQuest, mais sa liste complète de trophées n’est pas encore intégrée. Utilisez les guides externes spécifiques au jeu et à la plateforme.',searchList:'🔎 Rechercher la liste des trophées',guideSite:'🏆 Guides PlayStationTrophies',copyName:'Copier le nom du jeu',copied:'Copié',externalNote:'Vérifiez l’édition et la plateforme, et séparez les trophées du jeu de base et les DLC. Les liens externes ne signifient pas que la liste est intégrée.',bronze:'🥉 Bronze',silver:'🥈 Argent',gold:'🥇 Or',platinum:'💎 Platine',note:'Remarque : cette bibliothèque contient les 50 jeux de la première liste et deux jeux du prototype précédent. Les images peuvent être illustratives plutôt que les jaquettes officielles exactes. Il s’agit d’un catalogue initial, non de tous les jeux PlayStation. Il n’est pas connecté au PSN. Certaines listes sont intégrées ; les autres renvoient à des guides externes en attendant leur vérification. La progression est enregistrée dans ce navigateur. Le DLC de Resident Evil 7 n’est pas inclus dans la liste de base de 38 trophées.'},
+ de:{tagline:'Vom ersten Pokal bis Platin',language:'Sprache',beta:'Beta-Version',eyebrow:'Jede Trophäe bringt dich näher ans Ziel',heroTitle:'Jage Platin,<br>eine Trophäe nach der anderen.',heroText:'Spielebibliothek, Fortschrittsanzeige und Hilfe bei der Planung deiner Trophäenjagd.',explore:'Bibliothek ansehen →',statGames:'Spiele in der Bibliothek',statTrophies:'Erfasste Trophäen',statProgress:'Erfasster Fortschritt',library:'🎮 Spielebibliothek',search:'Spiele suchen...',allPlatforms:'Alle Plattformen',sortDefault:'Standardreihenfolge',sortRating:'Am besten bewertet',sortAZ:'Name A–Z',sortYear:'Neueste Veröffentlichung',retry:'Bilder neu laden',trophyTitle:'🏆 Spieltrophäen',chooseGame:'Wähle ein Spiel, um Trophäen zu sehen.',assistant:'🤖 PlatQuest-Assistent',assistantSub:'Frage nach Trophäen oder plane deine Platin-Jagd.',quickPlan:'Platin-Plan',quickMissable:'Verpassbare Trophäen',quickProgress:'Fortschritt verfolgen',welcome:'Willkommen, Trophäenjäger! 🏆 Wähle ein Spiel und hake verdiente Trophäen ab. Diese frühe Version bietet allgemeine Hilfe; einige Daten werden noch geprüft.',question:'Frage eingeben...',send:'Senden',emptySearch:'Keine passenden Spiele gefunden.',rated:'⭐ Quellenbewertung:',noRating:'Keine Bewertung verfügbar',entered:'erfasste Trophäen',notMerged:'Trophäenliste noch nicht integriert',showTrophies:'Trophäen ansehen',trophyGuide:'Trophäen & Guide',notStarted:'Nicht begonnen',retryFailed:'Externes Bild nicht verfügbar · Ersatzcover',imageLabel:'Spielbild',notOfficial:'Referenzbild · möglicherweise nicht das exakte offizielle Cover',noList:'Dieses Spiel ist in PlatQuest, aber die vollständige Trophäenliste ist noch nicht integriert. Nutze die externen Guides für das jeweilige Spiel und die Plattform.',searchList:'🔎 Trophäenliste suchen',guideSite:'🏆 PlayStationTrophies-Guides',copyName:'Spielname kopieren',copied:'Kopiert',externalNote:'Prüfe Edition und Plattform und trenne Basis-Spiel von DLC. Externe Links bedeuten nicht, dass die Liste integriert ist.',bronze:'🥉 Bronze',silver:'🥈 Silber',gold:'🥇 Gold',platinum:'💎 Platin',note:'Hinweis: Diese Bibliothek enthält die 50 Spiele aus der ersten Liste sowie zwei aus dem früheren Prototyp. Bilder können illustrative Bilder statt exakter offizieller Cover sein. Dies ist ein Anfangskatalog, nicht jedes PlayStation-Spiel. Keine Verbindung zum PSN. Einige Listen sind integriert; andere verlinken bis zur Prüfung auf externe Guides. Der Fortschritt wird in diesem Browser gespeichert. Resident Evil 7 DLC ist nicht in der Basisliste mit 38 Trophäen enthalten.'},
+ pt:{tagline:'Do primeiro troféu à Platina',language:'Idioma',beta:'Versão beta',eyebrow:'Cada troféu aproxima você do objetivo',heroTitle:'Busque a Platina,<br>um troféu de cada vez.',heroText:'Biblioteca de jogos, acompanhamento de progresso e ajuda para planejar sua jornada de troféus.',explore:'Explorar biblioteca →',statGames:'Jogos na biblioteca',statTrophies:'Troféus registrados',statProgress:'Progresso registrado',library:'🎮 Biblioteca de jogos',search:'Buscar jogos...',allPlatforms:'Todas as plataformas',sortDefault:'Ordem padrão',sortRating:'Mais bem avaliados',sortAZ:'Nome A–Z',sortYear:'Lançamentos recentes',retry:'Recarregar imagens',trophyTitle:'🏆 Troféus do jogo',chooseGame:'Escolha um jogo para ver os troféus.',assistant:'🤖 Assistente PlatQuest',assistantSub:'Pergunte sobre troféus ou planeje sua Platina.',quickPlan:'Plano de Platina',quickMissable:'Troféus perdíveis',quickProgress:'Acompanhar progresso',welcome:'Boas-vindas, caçador de troféus! 🏆 Escolha um jogo e marque os troféus conquistados. Esta versão inicial oferece ajuda geral; alguns dados ainda estão sendo verificados.',question:'Digite sua pergunta...',send:'Enviar',emptySearch:'Nenhum jogo encontrado.',rated:'⭐ Avaliação da fonte:',noRating:'Avaliação indisponível',entered:'troféus cadastrados',notMerged:'Lista de troféus ainda não integrada',showTrophies:'Ver troféus',trophyGuide:'Troféus e guia',notStarted:'Não iniciado',retryFailed:'Imagem externa indisponível · capa alternativa',imageLabel:'Imagem do jogo',notOfficial:'Imagem ilustrativa · pode não ser a capa oficial exata',noList:'Este jogo está na biblioteca PlatQuest, mas a lista completa de troféus ainda não foi integrada. Use os guias externos específicos do jogo e da plataforma.',searchList:'🔎 Buscar lista de troféus',guideSite:'🏆 Guias PlayStationTrophies',copyName:'Copiar nome do jogo',copied:'Copiado',externalNote:'Confira a edição e a plataforma e separe os troféus do jogo base dos DLCs. Links externos não significam que a lista esteja integrada.',bronze:'🥉 Bronze',silver:'🥈 Prata',gold:'🥇 Ouro',platinum:'💎 Platina',note:'Nota: esta biblioteca contém os 50 jogos da primeira lista e dois do protótipo anterior. As imagens podem ser ilustrativas, não capas oficiais exatas. Este é um catálogo inicial, não todos os jogos de PlayStation. Não está conectado à PSN. Algumas listas estão integradas; outras levam a guias externos até serem verificadas. O progresso é salvo neste navegador. O DLC de Resident Evil 7 não está incluído na lista base de 38 troféus.'}
+};
+let currentLang=safeGet('pq_lang')||'ar';
+function tr(key){return (UI_LANGS[currentLang]||UI_LANGS.ar)[key]||UI_LANGS.ar[key]||key}
+function applyLanguage(lang){currentLang=UI_LANGS[lang]?lang:'ar';try{safeSet('pq_lang',currentLang)}catch(e){};document.documentElement.lang=currentLang;document.documentElement.dir=currentLang==='ar'?'rtl':'ltr';document.getElementById('languageSelect').value=currentLang;document.getElementById('languageLabel').textContent=tr('language');document.getElementById('brandTagline').textContent=tr('tagline');document.getElementById('betaPill').textContent=tr('beta');document.querySelector('.eyebrow').textContent=tr('eyebrow');document.querySelector('.hero h2').innerHTML=tr('heroTitle');document.querySelector('.hero p').textContent=tr('heroText');document.querySelector('.hero .primary').textContent=tr('explore');const stats=document.querySelectorAll('.stat span');['statGames','statTrophies','statProgress'].forEach((k,i)=>stats[i].textContent=tr(k));document.querySelector('#library h3').textContent=tr('library');document.getElementById('search').placeholder=tr('search');document.getElementById('search').setAttribute('aria-label',tr('search'));document.querySelector('#platform option[value="all"]').textContent=tr('allPlatforms');document.querySelector('#sort option[value="default"]').textContent=tr('sortDefault');document.querySelector('#sort option[value="rating"]').textContent=tr('sortRating');document.querySelector('#sort option[value="az"]').textContent=tr('sortAZ');document.querySelector('#sort option[value="year"]').textContent=tr('sortYear');document.getElementById('retryCovers').textContent=tr('retry');document.getElementById('trophyTitle').textContent=tr('trophyTitle');document.getElementById('trophySubtitle').textContent=tr('chooseGame');document.querySelector('.chat h3').textContent=tr('assistant');document.querySelector('.chat>.sub').textContent=tr('assistantSub');const qb=document.querySelectorAll('.quick button');[ 'quickPlan','quickMissable','quickProgress'].forEach((k,i)=>qb[i].textContent=tr(k));const q=document.getElementById('question');q.placeholder=tr('question');document.querySelector('#chatform button').textContent=tr('send');const first=document.querySelector('#chatlog .bot');if(first&&first.dataset.welcome==='1')first.textContent=tr('welcome');document.querySelector('.note').textContent=tr('note');renderGames();renderTrophies()}
+function save(){safeSet('pq_games',JSON.stringify(games));renderAll()}
+function earned(g){return g.trophies.filter(t=>t.done).length}
+function renderAll(){renderGames();renderTrophies();let allTrophies=games.reduce((a,g)=>a+g.trophies.length,0),done=games.reduce((a,g)=>a+earned(g),0);document.getElementById('gameCount').textContent=games.length;document.getElementById('earnedCount').textContent=done;document.getElementById('overall').textContent=(allTrophies?Math.round(done/allTrophies*100):0)+'%'}
+// Cover lookup v3: prioritize the exact Wikipedia article, then a close title match.
+// This public source has no API key, but its images are representative page images—not guaranteed box-art scans.
+let coverCache={};try{coverCache=JSON.parse(safeGet('pq_cover_cache_v4')||'{}')||{}}catch(e){coverCache={}};
+const coverLoading=new Set();
+function normalizeTitle(s){return String(s||'').toLowerCase().normalize('NFKD').replace(/[’'`:!.,()\-–—]/g,' ').replace(/[^\p{L}\p{N} ]/gu,' ').replace(/\s+/g,' ').trim()}
+function titleScore(a,b){const aa=normalizeTitle(a).split(' ').filter(Boolean),bb=new Set(normalizeTitle(b).split(' ').filter(Boolean));if(!aa.length)return 0;return aa.filter(x=>bb.has(x)).length/aa.length}
+async function wikiJSON(url){const r=await fetch(url,{mode:'cors',headers:{'Api-User-Agent':'PlatQuest/1.0 (game cover display)'}});if(!r.ok)throw new Error('image service unavailable');return r.json()}
+async function getWikiImage(g){
+ // Try the exact game article title first; then use Wikipedia's search results only when needed.
+ const exact=await wikiJSON(`https://en.wikipedia.org/w/api.php?action=query&format=json&titles=${encodeURIComponent(g.name)}&prop=pageimages&piprop=thumbnail&pithumbsize=700&origin=*`);
+ const pages=Object.values(exact?.query?.pages||{});const exactPage=pages.find(x=>!x.missing&&x.thumbnail?.source);
+ if(exactPage&&titleScore(g.name,exactPage.title)>=0.72)return exactPage.thumbnail.source;
+ const q=encodeURIComponent(`${g.name} video game`);
+ const search=await wikiJSON(`https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${q}&srlimit=8&origin=*`);
+ const results=(search?.query?.search||[]).map(x=>({...x,score:titleScore(g.name,x.title)})).filter(x=>x.score>=0.62).sort((a,b)=>b.score-a.score).slice(0,5);
+ if(!results.length)throw new Error('no close matching article');
+ const details=await wikiJSON(`https://en.wikipedia.org/w/api.php?action=query&format=json&titles=${encodeURIComponent(results.map(x=>x.title).join('|'))}&prop=pageimages&piprop=thumbnail&pithumbsize=700&origin=*`);
+ const ranked=Object.values(details?.query?.pages||{}).map(x=>({...x,score:titleScore(g.name,x.title)})).filter(x=>x.thumbnail?.source&&x.score>=0.62).sort((a,b)=>b.score-a.score);
+ if(!ranked.length)throw new Error('no image for matching article');return ranked[0].thumbnail.source;
+}
+async function loadCover(g,coverEl){
+ if(!g||!coverEl||coverEl.dataset.coverType==='image'||coverLoading.has(g.id))return;
+ const rawgCached=(typeof pqRawgCoverCache!=='undefined'&&pqRawgCoverCache)?pqRawgCoverCache[g.id]:null;if(rawgCached){setCoverImage(coverEl,rawgCached,g.icon,g.platform);return;}
+ const cached=coverCache[g.id];if(cached){setCoverImage(coverEl,cached,g.icon,g.platform);return;}
+ coverLoading.add(g.id);coverEl.dataset.loading='1';
+ try{const url=await getWikiImage(g);coverCache[g.id]=url;try{safeSet('pq_cover_cache_v4',JSON.stringify(coverCache))}catch(e){};setCoverImage(coverEl,url,g.icon,g.platform)}
+ catch(e){setPosterCover(coverEl,g);coverEl.dataset.coverError='1'}
+ finally{coverLoading.delete(g.id);delete coverEl.dataset.loading}
+}
+function setPosterCover(el,g){if(!el||!g||el.dataset.coverType==='image')return;el.dataset.loaded='1';el.dataset.coverType='poster';const colors=['#8b5cf6','#20a4a8','#e05252','#d6a33d','#4877d8','#c34c91','#47a36f'];const color=colors[Math.abs(String(g.id).split('').reduce((a,c)=>a+c.charCodeAt(0),0))%colors.length];el.classList.add('poster');el.innerHTML=`<span class="poster-mark">${esc(g.icon||'🎮')}</span><span class="poster-title">${esc(g.name)}</span><span class="poster-meta">${esc(g.platform||'PlayStation')} · ${g.year||'GAME'}</span><span class="platform-badge">${esc(g.platform||'PlayStation')}</span>${el.dataset.coverError==='1'?`<span class="cover-label">${esc(tr('retryFailed'))}</span>`:''}`}
+function setCoverImage(el,url,icon,platform){if(!el||el.dataset.coverType==='image')return;el.dataset.loaded='1';el.dataset.coverType='image';el.classList.remove('poster');el.innerHTML=`<img loading="lazy" decoding="async" referrerpolicy="no-referrer" alt="${esc(tr('imageLabel'))} ${esc(el.dataset.gameName||'')}" src="${esc(url)}"><span class="platform-badge">${esc(platform||'PlayStation')}</span><span class="cover-label">${esc(tr('notOfficial'))}</span>`;const img=el.querySelector('img');img.onerror=()=>{delete coverCache[el.dataset.gameId];try{safeSet('pq_cover_cache_v4',JSON.stringify(coverCache))}catch(e){};el.dataset.coverType='';el.dataset.coverError='1';const g=games.find(x=>x.id===el.dataset.gameId);setPosterCover(el,g||{name:el.dataset.gameName,icon,platform})}}
+const coverObserver=('IntersectionObserver' in window)?new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target;coverObserver.unobserve(el);const g=games.find(x=>x.id===el.dataset.gameId);loadCover(g,el)}}),{rootMargin:'250px'}):null;
+function normalizePlatformText(v){return String(v||'').split(/\s*\/\s*/).map(x=>x.trim()).filter(Boolean)}
+let pqPlayerStatuses={};try{pqPlayerStatuses=JSON.parse(safeGet('pq_player_statuses')||'{}')||{}}catch(e){pqPlayerStatuses={}}
+function savePlayerStatus(id,status){if(status)pqPlayerStatuses[id]=status;else delete pqPlayerStatuses[id];safeSet('pq_player_statuses',JSON.stringify(pqPlayerStatuses));renderGames()}
+let pqVisibleGameLimit=120;
+function renderGames(){
+ const q=document.getElementById('search').value.toLowerCase(),p=document.getElementById('platform').value,sort=document.getElementById('sort')?.value||'default';
+ const pop=document.getElementById('popularityFilter')?.value||'all',genre=document.getElementById('genreFilter')?.value||'all',tf=document.getElementById('trophyFilter')?.value||'all',sf=document.getElementById('playerStatusFilter')?.value||'all';
+ let list=games.filter(g=>{const cat=String(g.category||'').toLowerCase(),status=pqPlayerStatuses[g.id]||'';const nameMatch=g.name.toLowerCase().includes(q)||cat.includes(q);const platformMatch=p==='all'||normalizePlatformText(g.platform).includes(p);const popMatch=pop==='all'||(pop==='popular'&&(g.rating??0)>=8.5)||(pop==='top'&&(g.rating??0)>=9)||(pop==='unrated'&&(g.rating===null||g.rating===undefined));const genreMatch=genre==='all'||cat.includes(genre.toLowerCase());const trophyCount=(g.trophies||[]).length,earnedCount=(g.trophies||[]).filter(t=>t.done).length;const trophyMatch=tf==='all'||(tf==='entered'&&trophyCount>0)||(tf==='missing'&&trophyCount===0)||(tf==='started'&&earnedCount>0&&earnedCount<trophyCount)||(tf==='done'&&trophyCount>0&&earnedCount===trophyCount);const statusMatch=sf==='all'||status===sf;return nameMatch&&platformMatch&&popMatch&&genreMatch&&trophyMatch&&statusMatch;});
+ if(sort==='rating')list.sort((a,b)=>(b.rating??-1)-(a.rating??-1));else if(sort==='az')list.sort((a,b)=>a.name.localeCompare(b.name));else if(sort==='year')list.sort((a,b)=>(b.year||0)-(a.year||0));
+ const count=document.getElementById('classificationCount');if(count)count.textContent=`تظهر ${list.length} من أصل ${games.length} لعبة`;
+ const el=document.getElementById('games');el.innerHTML='';if(!list.length){el.innerHTML=`<div class="empty">${esc(tr('emptySearch'))}</div>`;return}
+ list.slice(0,pqVisibleGameLimit).forEach(g=>{let n=earned(g),hasTrophies=g.trophies.length>0,pct=hasTrophies?Math.round(n/g.trophies.length*100):0;let d=document.createElement('article');d.className='game';const status=pqPlayerStatuses[g.id]||'';d.innerHTML=`<div class="cover" data-game-id="${esc(g.id)}" data-game-name="${esc(g.name)}">${g.icon||'🎮'}<span class="platform-badge">${esc(g.platform||'PlayStation')}</span></div><h4>${esc(g.name)}</h4><div class="sub">${esc(g.platform||'PlayStation')} · ${g.year||'سنة الإصدار غير محددة'} · ${esc(g.category||'التصنيف قيد التحديد')}</div><div class="sub" style="margin-top:7px">${g.rating!==null&&g.rating!==undefined?tr('rated')+' '+g.rating:tr('noRating')} · ${hasTrophies?(g.trophies.length+' '+tr('entered')):tr('notMerged')}</div><div class="bar"><i style="width:${pct}%"></i></div><div class="gamefoot"><span class="sub">${hasTrophies?n+'/'+g.trophies.length+' · '+pct+'%':tr('notStarted')}</span><button class="smallbtn pq-show-trophies">${hasTrophies?tr('showTrophies'):tr('trophyGuide')}</button><button class="smallbtn pq-open-map" type="button" data-game-id="${esc(g.id)}" aria-label="خرائط وأدلة ${esc(g.name)}">🗺️ الخرائط</button></div><label class="sub" style="display:block;margin-top:12px">حالة لعبتي <select class="pq-player-status" aria-label="حالة ${esc(g.name)}" style="display:block;width:100%;margin-top:5px;background:#101221;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:9px"><option value="">غير محددة</option><option value="want" ${status==='want'?'selected':''}>أبغى ألعبها</option><option value="playing" ${status==='playing'?'selected':''}>ألعبها حاليًا</option><option value="completed" ${status==='completed'?'selected':''}>أنهيتها</option><option value="platinum" ${status==='platinum'?'selected':''}>جبت البلاتينيوم</option></select></label>`;d.querySelector('.pq-show-trophies').onclick=()=>{if(pqAudioCurrent&&pqAudioCurrent!==g.id)stopPQAudio();activeId=g.id;renderTrophies();document.getElementById('trophyTitle').scrollIntoView({behavior:'smooth',block:'center'})};d.querySelector('.pq-player-status').onchange=e=>savePlayerStatus(g.id,e.target.value);el.appendChild(d);const cover=d.querySelector('.cover');setPosterCover(cover,g);if(coverObserver)coverObserver.observe(cover);else loadCover(g,cover)});if(list.length>pqVisibleGameLimit){const more=document.createElement('button');more.className='primary';more.type='button';more.style.cssText='grid-column:1/-1;justify-self:center;margin:12px';more.textContent=`عرض 120 لعبة إضافية (${list.length-pqVisibleGameLimit} متبقية)`;more.onclick=()=>{pqVisibleGameLimit+=120;renderGames()};el.appendChild(more)}
+}
+function renderTrophies(){const g=games.find(x=>x.id===activeId),el=document.getElementById('trophies');if(!g){el.innerHTML='';return}document.getElementById('trophyTitle').textContent='🏆 '+g.name;document.getElementById('trophySubtitle').textContent=`${g.platform} · ${g.year||'سنة الإصدار غير محددة'} · ${g.category||'التصنيف قيد التحديد'}`;el.innerHTML='';
+const pqDetails={
+'re7':{summary:'تبدأ أحداث Resident Evil 7: Biohazard في مزرعة عائلة بيكر الغامضة، ويبحث إيثان وينترز عن زوجته وسط أجواء رعب وبقاء متوترة.',characters:[['Ethan Winters','بطل القصة الذي يبحث عن زوجته ويحاول النجاة.'],['Mia Winters','زوجة إيثان التي تقوده رسائلها إلى المزرعة.'],['Jack Baker','أحد أفراد عائلة بيكر ويطارد إيثان داخل المنزل.'],['Marguerite Baker','فرد من العائلة يواجهه إيثان في منطقة المنزل القديم.']],map:'Resident Evil 7 Biohazard map guide collectibles antique coins files',mapUrl:'https://mapgenie.io/resident-evil-7-biohazard/maps/baker-ranch',video:'Resident Evil 7 Biohazard platinum trophy guide all collectibles Madhouse'},
+'spider-man-2-ps5':{summary:'يتحكم اللاعب ببيتر باركر ومايلز موراليس في مغامرة عالم مفتوح بنيويورك، ويواجهان تهديدات جديدة.',characters:[['Peter Parker','الرجل العنكبوت الذي يحاول الموازنة بين حياته ومسؤوليته.'],['Miles Morales','شريك بيتر وبطل يمتلك قدرات كهربائية وتمويهًا.'],['Mary Jane Watson','صحفية تساعد في كشف أحداث القصة.'],['Venom','خصم رئيسي مرتبط بتهديد سيمبيوت.']],map:'Spider-Man 2 interactive map collectibles',mapUrl:'https://mapgenie.io/spider-man-2',video:'Marvel’s Spider-Man 2 trophy guide platinum walkthrough'},
+'gow-ragnarok-ps5':{summary:'رحلة كريتوس وأتريوس عبر العوالم الإسكندنافية مع اقتراب أحداث راغناروك.',characters:[['Kratos','محارب يحاول حماية ابنه ومواجهة ماضيه.'],['Atreus','ابن كريتوس يسعى لفهم هويته ومصيره.'],['Freya','محاربة وساحرة لها دور محوري في القصة.'],['Thor','إله الرعد وأحد أبرز خصوم الرحلة.']],map:'God of War Ragnarok interactive map collectibles',mapUrl:'https://mapgenie.io/god-of-war-ragnarok',video:'God of War Ragnarok platinum trophy guide'},
+'resident-evil-4-remake':{summary:'يُرسل العميل ليون كينيدي لإنقاذ ابنة الرئيس من قرية تعاني طائفة خطيرة.',characters:[['Leon S. Kennedy','عميل حكومي ومقاتل متمرس.'],['Ashley Graham','الشخصية التي يسعى ليون إلى إنقاذها.'],['Ada Wong','عميلة غامضة ذات أهداف خاصة.'],['Luis Serra','باحث سابق يساعد ليون خلال الرحلة.']],map:'Resident Evil 4 remake interactive map treasures',mapUrl:'https://mapgenie.io/resident-evil-4-remake',video:'Resident Evil 4 remake platinum trophy guide'},
+'elden-ring-ps':{summary:'لعبة تقمص أدوار في الأراضي الوسطى، حيث يستكشف اللاعب العالم ويواجه زعماء للحصول على لقب إلدن لورد.',characters:[['The Tarnished','شخصية اللاعب التي تصنع طريقها داخل الأراضي الوسطى.'],['Melina','مرشدة تعرض المساعدة في الرحلة.'],['Ranni','ساحرة مرتبطة بمسار قصصي اختياري مهم.'],['Malenia','محاربة شهيرة بمواجهة شديدة الصعوبة.']],map:'Elden Ring interactive map sites of grace items',mapUrl:'https://mapgenie.io/elden-ring',video:'Elden Ring platinum trophy guide all legendary items'},
+'black-myth-wukong':{summary:'مغامرة أكشن مستوحاة من رواية رحلة إلى الغرب، يتقمص فيها اللاعب دور المختار ويواجه مخلوقات وزعماء أسطوريين.',characters:[['The Destined One','البطل الذي يخوض الرحلة ويواجه خصومًا أسطوريين.'],['Sun Wukong','الملك القرد الذي تستلهم منه اللعبة عالمها وأسطورتها.'],['Zhu Bajie','رفيق يظهر خلال الرحلة.'],['Yellow Wind Sage','أحد الزعماء البارزين.']],map:'Black Myth Wukong interactive map meditation spots',mapUrl:'https://gamemappers.com/black-myth-wukong-map/',video:'Black Myth Wukong platinum trophy guide'},
+'the-last-of-us-part-1':{summary:'رحلة نجاة عبر الولايات المتحدة بعد انهيار المجتمع بسبب عدوى فطرية.',characters:[['Joel Miller','ناجٍ يُكلّف بمرافقة إيلي.'],['Ellie Williams','فتاة محورية في الرحلة وقد تكون مفتاح الأمل.'],['Tess','شريكة جويل في أعمال التهريب.'],['Marlene','قائدة جماعة الفايرفلايز.']],map:'The Last of Us Part I collectibles guide map',mapUrl:'https://thelastofus.fandom.com/wiki/Collectible/The_Last_of_Us_Part_I',video:'The Last of Us Part I trophy guide collectibles'},
+'horizon-forbidden-west':{summary:'تواصل ألوي رحلتها في عالم مستقبلي تهيمن عليه آلات خطيرة، بحثًا عن سبب تهديد جديد للحياة.',characters:[['Aloy','صيادة ومستكشفة تحاول إنقاذ العالم.'],['Varl','حليف يساعد ألوي في رحلتها.'],['Erend','محارب من قبيلة أوتارو وصديق لألوي.'],['Sylens','باحث غامض يعرف أسرار العالم القديم.']],map:'Horizon Forbidden West interactive map collectibles',mapUrl:'https://mapgenie.io/horizon-forbidden-west',video:'Horizon Forbidden West platinum trophy guide'},
+'ghost-of-tsushima-directors-cut':{summary:'يسعى الساموراي جين ساكاي لحماية جزيرة تسوشيما من الغزو المغولي، ويضطر لمراجعة تقاليده القتالية.',characters:[['Jin Sakai','ساموراي بطل القصة.'],['Yuna','لصة ماهرة تساعد جين.'],['Lord Shimura','عم جين ومعلمه.'],['Khotun Khan','قائد الغزو المغولي والخصم الرئيسي.']],map:'Ghost of Tsushima interactive map collectibles',mapUrl:'https://mapgenie.io/ghost-of-tsushima',video:'Ghost of Tsushima platinum trophy guide'},
+'sekiro-shadows-die-twice':{summary:'نينجا يُعرف بالذئب ذو الذراع الواحدة يحاول حماية سيده في اليابان الخيالية خلال حقبة سينغوكو.',characters:[['Sekiro / Wolf','محارب شينوبي يسعى للوفاء بقسمه.'],['Kuro','السيد الشاب الذي يحميه سيكيرو.'],['Genichiro Ashina','مقاتل يسعى لحماية عشيرته.'],['Emma','طبيبة لها دور مهم في القصة.']],map:'Sekiro Shadows Die Twice map walkthrough',mapUrl:'https://www.google.com/search?q=Sekiro+Shadows+Die+Twice+interactive+map+Fextralife',video:'Sekiro platinum trophy guide all endings'},
+'astro-bot-2024':{summary:'مغامرة منصات ملونة ينطلق فيها Astro لإنقاذ طاقمه واستعادة أجزاء سفينته عبر عوالم متنوعة.',characters:[['Astro','روبوت صغير هو بطل المغامرة.'],['Bot Crew','طاقم الروبوتات الذي يحتاج إلى الإنقاذ.'],['Space Bully Nebulax','الخصم الذي يتسبب بأزمة البداية.']],map:'Astro Bot all bots puzzle pieces secret levels map',mapUrl:'https://www.escapistmagazine.com/astro-bot-tentacle-system-walkthrough-collectibles/',video:'Astro Bot platinum trophy guide all bots puzzle pieces'}
+};
+window.pqDetails=pqDetails;const extra=pqDetails[g.id];if(extra){const enc=q=>encodeURIComponent(q);const charHtml=extra.characters.map((c,i)=>`<div class="pq-character"><div class="pq-char-icon" id="pq-char-${esc(g.id)}-${i}">👤</div><div><strong>${esc(c[0])}</strong><p>${esc(c[1])}</p><a class="guide-link" target="_blank" rel="noopener noreferrer" href="https://commons.wikimedia.org/w/index.php?search=${enc(c[0]+' '+g.name)}&title=Special:MediaSearch&type=image">🖼️ فتح صور الشخصية</a></div></div>`).join('');el.innerHTML+=`<section class="pq-game-details"><h3>📖 نبذة عن اللعبة</h3><p>${esc(extra.summary)}</p><div class="pq-audio-box"><div><strong>🎵 موسيقى وأجواء اللعبة</strong><p>النغمة المدمجة أصلية ومولّدة داخل PlatQuest وليست موسيقى اللعبة الرسمية. زر واحد يشغّلها أو يوقفها. للاستماع إلى الموسيقى الأصلية، افتح نتائج البحث المخصصة للعبة.</p><div class="pq-audio-status" id="pqAudioStatus">النغمة متوقفة</div></div><div class="pq-audio-controls"><button class="primary pq-audio-toggle" type="button" data-game-id="${esc(g.id)}" aria-pressed="false">▶ تشغيل النغمة</button><a class="guide-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=${enc(g.name+' official soundtrack OST')}" >🎧 ابحث عن الموسيقى الأصلية</a></div></div><h3>👥 الشخصيات وصورها</h3><div class="pq-characters">${charHtml}</div><h3>🗺️ الخريطة والأماكن</h3><p>روابط خرائط وأدلة مخصصة قدر الإمكان لكل لعبة، مع توضيح أن بعض الموارد من صنع المجتمع وليست رسمية.</p><div class="guide-actions"><button class="guide-link pq-open-map" type="button" data-game-id="${esc(g.id)}">🗺️ فتح صفحة الخريطة</button><a class="guide-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=${enc(extra.video)}">▶️ فيديوهات شرح التروفيات</a><a class="guide-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=${enc(g.name+' official trailer gameplay')}">🎬 المقطع التعريفي</a></div><p class="pq-disclaimer">معلومات الشخصيات موجزة وقد تحتاج مراجعة. روابط الصور تفتح بحثًا خارجيًا، والموسيقى الأصلية ليست مضمّنة داخل التطبيق؛ زر الموسيقى يفتح بحثًا للاستماع. روابط الخرائط والأدلة خارجية وقد تكون من صنع المجتمع، لذا تحقق من الإصدار والمنصة. لا تُعرض قائمة تروفيات داخلية غير متحققة؛ استخدم الدليل المرجعي.</p></section>`;loadCharacterPortraits(g,extra);}
+if(g.guideUrl){const n=g.guideCount?` · الدليل المرجعي يسرد ${g.guideCount} تروفيًا (قد يشمل DLC بحسب المصدر)`:'';el.innerHTML+=`<div class="guide-actions"><a class="guide-link" href="${esc(g.guideUrl)}" target="_blank" rel="noopener noreferrer">📖 فتح دليل التروفيات الكامل</a></div><div class="sub" style="margin-bottom:10px">رابط مرجعي خارجي${n}. القائمة التي يمكن تتبّعها داخل PlatQuest تُحتسب فقط من التروفيات المدخلة محليًا.</div>`}if(!g.trophies.length){const query=encodeURIComponent(g.name+' '+g.platform+' complete trophy list guide');const psnQuery=encodeURIComponent(g.name+' trophy list');el.innerHTML+=`<div class="empty" style="grid-column:auto">قائمة التروفيات الداخلية لهذه اللعبة لم تكتمل بعد.</div><div class="guide-actions"><a class="guide-link" href="https://www.google.com/search?q=${query}" target="_blank" rel="noopener noreferrer">${tr("searchList")}</a><a class="guide-link" href="https://www.google.com/search?q=${psnQuery}+site%3Aplaystationtrophies.org" target="_blank" rel="noopener noreferrer">${tr("guideSite")}</a><button class="smallbtn" id="copyGameName" type="button">${tr("copyName")}</button></div><div class="sub">${esc(tr('externalNote'))}</div>`;document.getElementById('copyGameName').onclick=()=>{const b=document.getElementById('copyGameName');const text=g.name+' '+g.platform;if(navigator.clipboard?.writeText){navigator.clipboard.writeText(text).then(()=>b.textContent=tr('copied')).catch(()=>b.textContent=text)}else b.textContent=text};return}g.trophies.forEach(t=>{let row=document.createElement('label');row.className='trophyrow';row.innerHTML=`<input type="checkbox" ${t.done?'checked':''} aria-label="تم إنجاز ${esc(t.name)}"><div style="flex:1"><div class="trophyname">${esc(t.name)}</div><p>${esc(t.desc)}</p></div><span class="rarity ${t.type}">${({bronze:tr('bronze'),silver:tr('silver'),gold:tr('gold'),platinum:tr('platinum')})[t.type]}</span>`;row.querySelector('input').onchange=e=>{t.done=e.target.checked;save()};el.appendChild(row)})}
+// Character portraits: load an available Wikipedia thumbnail when a matching article image exists; keep a search link as fallback.
+async function loadCharacterPortraits(game,extra){
+ const jobs=extra.characters.map(async (c,i)=>{
+  const box=document.getElementById(`pq-char-${game.id}-${i}`); if(!box)return;
+  try{
+   const url='https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch='+encodeURIComponent('"'+c[0]+'"')+'&gsrnamespace=0&gsrlimit=3&prop=pageimages&piprop=thumbnail&pithumbsize=240&origin=*';
+   const data=await wikiJSON(url);const pages=Object.values(data?.query?.pages||{});
+   const candidate=pages.find(pg=>pg.thumbnail?.source && (titleScore(c[0],pg.title)>=0.45 || normalizeTitle(pg.title).includes(normalizeTitle(c[0]))));
+   if(candidate){const img=document.createElement('img');img.loading='lazy';img.alt=c[0];img.src=candidate.thumbnail.source;img.onerror=()=>{box.textContent='👤'};box.textContent='';box.appendChild(img);}
+  }catch(e){/* External portrait lookup may be unavailable; the image-search link remains available. */}
+ }); await Promise.allSettled(jobs);
+}
+// Procedural original ambience avoids bundling copyrighted game soundtracks. User gesture is required by browser audio policies.
+let pqAudioCtx=null,pqAudioNodes=[],pqAudioTimer=null,pqAudioCurrent=null;
+const pqSoundProfiles={
+ 're7':{notes:[65.4,77.8,58.3,87.3,65.4,51.9],wave:'sine',beat:0.92,vol:0.022},
+ 'spider-man-2-ps5':{notes:[220,277,330,440],wave:'triangle',beat:0.34,vol:0.035},
+ 'gow-ragnarok-ps5':{notes:[110,146.8,164.8,220],wave:'sawtooth',beat:0.62,vol:0.022},
+ 'resident-evil-4-remake':{notes:[73.4,82.4,110,146.8],wave:'sine',beat:0.82,vol:0.025},
+ 'elden-ring-ps':{notes:[130.8,164.8,196,261.6],wave:'sine',beat:0.72,vol:0.026},
+ 'black-myth-wukong':{notes:[146.8,185,220,293.7],wave:'triangle',beat:0.48,vol:0.027},
+ 'the-last-of-us-part-1':{notes:[98,130.8,146.8,196],wave:'triangle',beat:0.92,vol:0.025},
+ 'horizon-forbidden-west':{notes:[164.8,220,246.9,329.6],wave:'sine',beat:0.46,vol:0.026},
+ 'ghost-of-tsushima-directors-cut':{notes:[146.8,196,220,293.7],wave:'sine',beat:0.68,vol:0.024},
+ 'sekiro-shadows-die-twice':{notes:[110,138.6,164.8,220],wave:'triangle',beat:0.38,vol:0.025},
+ 'astro-bot-2024':{notes:[261.6,329.6,392,523.3],wave:'triangle',beat:0.28,vol:0.025}
+};
+function stopPQAudio(){if(pqAudioTimer){clearInterval(pqAudioTimer);pqAudioTimer=null;}pqAudioNodes.forEach(n=>{try{n.stop?.();}catch(e){}try{n.disconnect?.();}catch(e){}});pqAudioNodes=[];pqAudioCurrent=null;document.querySelectorAll('.pq-audio-toggle').forEach(b=>{b.textContent='▶ تشغيل النغمة';b.setAttribute('aria-pressed','false')});const st=document.getElementById('pqAudioStatus');if(st)st.textContent='النغمة متوقفة';}
+function startPQAudio(gameId){
+ const game=games.find(g=>g.id===gameId);if(!game)return;stopPQAudio();
+ try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)throw new Error('audio unsupported');pqAudioCtx=pqAudioCtx||new AC();pqAudioCtx.resume();const profile=pqSoundProfiles[gameId]||{notes:[130.8,164.8,196,261.6],wave:'sine',beat:0.6,vol:0.025};let idx=0;
+ const playNote=()=>{if(!pqAudioCtx)return;const now=pqAudioCtx.currentTime;const osc=pqAudioCtx.createOscillator(),gain=pqAudioCtx.createGain(),filter=pqAudioCtx.createBiquadFilter();osc.type=profile.wave;osc.frequency.setValueAtTime(profile.notes[idx%profile.notes.length],now);filter.type='lowpass';filter.frequency.value=900;gain.gain.setValueAtTime(0.0001,now);gain.gain.exponentialRampToValueAtTime(profile.vol,now+0.08);gain.gain.exponentialRampToValueAtTime(0.0001,now+profile.beat*2.6);osc.connect(filter);filter.connect(gain);gain.connect(pqAudioCtx.destination);osc.start(now);osc.stop(now+profile.beat*2.7);pqAudioNodes.push(osc);pqAudioNodes.push(gain);pqAudioNodes.push(filter);idx++;if(pqAudioNodes.length>36)pqAudioNodes.splice(0,12).forEach(n=>{try{n.disconnect()}catch(e){}})};
+ playNote();pqAudioTimer=setInterval(playNote,profile.beat*1000);pqAudioCurrent=gameId;document.querySelectorAll('.pq-audio-toggle').forEach(b=>{const active=b.dataset.gameId===gameId;b.textContent=active?'⏸ إيقاف النغمة':'▶ تشغيل النغمة';b.setAttribute('aria-pressed',active?'true':'false')});const st=document.getElementById('pqAudioStatus');if(st)st.textContent='النغمة تعمل الآن: أجواء صوتية أصلية خاصة بـ '+game.name;
+ }catch(e){const st=document.getElementById('pqAudioStatus');if(st)st.textContent='تعذر تشغيل الصوت في هذا المتصفح. جرّب متصفحًا يدعم Web Audio.';}
+}
+document.addEventListener('click',e=>{const toggle=e.target.closest('.pq-audio-toggle');if(toggle){const gameId=toggle.dataset.gameId;if(pqAudioCurrent===gameId)stopPQAudio();else startPQAudio(gameId);}const start=e.target.closest('.pq-audio-start');if(start)startPQAudio(start.dataset.gameId);if(e.target.closest('.pq-audio-stop'))stopPQAudio();});
+function openMapPage(gameId){
+ stopPQAudio();
+ const g=games.find(x=>x.id===gameId);if(!g)return;
+ const extra=(window.pqDetails&&window.pqDetails[g.id])||{};
+ // If this game has a specific map destination, open the map immediately instead of showing an intermediate link list.
+ if(extra.mapUrl && !extra.mapUrl.includes('google.com/search')){
+   const opened=window.open(extra.mapUrl,'_blank','noopener,noreferrer');
+   if(!opened){ window.location.href=extra.mapUrl; }
+   return;
+ }
+ const enc=q=>encodeURIComponent(q);
+ document.getElementById('pqMapTitle').textContent='🗺️ خريطة '+g.name;
+ document.getElementById('pqMapSubtitle').textContent=(g.platform||'PlayStation')+' · خرائط وأماكن مهمة';
+ document.getElementById('pqMapHeading').textContent='🗺️ '+g.name+' — الخرائط';
+ document.getElementById('pqMapDescription').textContent='اختر نوع الدليل الذي تحتاجه. عند توفر رابط خريطة مخصص نعرضه أولًا، وبقية الخيارات تبحث باسم اللعبة والمنصة لتقليل النتائج غير المطابقة. بعض الأدلة من صنع المجتمع وقد تحتوي على حرق للأحداث.';
+ const qMap=extra.map||(`${g.name} interactive map locations collectibles guide`);
+ const opts=[
+  {icon:'🌐',title:extra.mapUrl && !extra.mapUrl.includes('google.com/search')?'خريطة / دليل مخصص للعبة':'البحث عن خريطة تفاعلية',desc:extra.mapUrl && !extra.mapUrl.includes('google.com/search')?'فتح مورد خرائط أو دليل مخصص لهذه اللعبة. قد يكون من صنع المجتمع وليس رسميًا؛ طابق الإصدار والمنصة.':'لم نعثر هنا على رابط خريطة تفاعلية محدد تم التحقق منه؛ افتح بحثًا مخصصًا للعبة.',url:extra.mapUrl||('https://www.google.com/search?q='+enc(qMap))},
+  {icon:'📍',title:'مواقع المقتنيات والأسرار',desc:'دليل للبحث عن المقتنيات والأسرار والأشياء القابلة للفوات، مع مراعاة إصدار اللعبة.',url:'https://www.google.com/search?q='+enc(g.name+' collectibles locations guide '+g.platform)},
+  {icon:'🧭',title:'شرح القصة والمراحل',desc:'حلول للمراحل، الألغاز، والمسارات الصعبة. قد تحتوي النتائج على حرق للأحداث.',url:'https://www.google.com/search?q='+enc(g.name+' full walkthrough puzzle solution '+g.platform)},
+  {icon:'👹',title:'الزعماء وأفضل الاستراتيجيات',desc:'استراتيجيات لمواجهات الزعماء والأسلحة أو التجهيزات المقترحة.',url:'https://www.youtube.com/results?search_query='+enc(g.name+' boss guide strategy '+g.platform)},
+  {icon:'▶️',title:'شرح الخريطة بالفيديو',desc:'فيديوهات توضّح المناطق والمسارات ومواقع الأشياء.',url:'https://www.youtube.com/results?search_query='+enc(g.name+' map collectibles locations guide '+g.platform)},
+  {icon:'🏆',title:'دليل التروفيات والبلاتينيوم',desc:'افتح نتائج أدلة التروفيات والبلاتينيوم الخاصة بهذه اللعبة.',url:'https://www.google.com/search?q='+enc(g.name+' '+g.platform+' platinum trophy guide')}
+ ];
+ document.getElementById('pqMapOptions').innerHTML=opts.map(o=>`<article class="pq-map-option"><h3>${o.icon} ${esc(o.title)}</h3><p>${esc(o.desc)}</p><a class="guide-link" target="_blank" rel="noopener noreferrer" href="${o.url}">فتح الرابط ←</a></article>`).join('');
+ document.getElementById('pqMapPage').classList.remove('hidden');document.body.style.overflow='hidden';document.getElementById('pqMapPage').scrollTop=0;
+}
+document.addEventListener('click',e=>{const b=e.target.closest('.pq-open-map');if(b){activeId=b.dataset.gameId;renderTrophies();openMapPage(b.dataset.gameId)}});
+document.getElementById('pqMapBack').addEventListener('click',()=>{document.getElementById('pqMapPage').classList.add('hidden');document.body.style.overflow='';if(pqAudioCurrent)stopPQAudio();});
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+document.getElementById('search').addEventListener('input',()=>{pqVisibleGameLimit=120;renderGames()});document.getElementById('platform').addEventListener('change',()=>{pqVisibleGameLimit=120;renderGames()});document.getElementById('sort').addEventListener('change',()=>{pqVisibleGameLimit=120;renderGames()});['popularityFilter','genreFilter','trophyFilter','playerStatusFilter'].forEach(id=>document.getElementById(id).addEventListener('change',()=>{pqVisibleGameLimit=120;renderGames()}));document.getElementById('clearClassification').addEventListener('click',()=>{['popularityFilter','genreFilter','trophyFilter','playerStatusFilter'].forEach(id=>document.getElementById(id).value='all');document.getElementById('search').value='';document.getElementById('platform').value='all';renderGames()});document.getElementById('retryCovers').addEventListener('click',()=>{document.querySelectorAll('.cover').forEach(el=>{const g=games.find(x=>x.id===el.dataset.gameId);el.dataset.coverType='';el.dataset.coverError='';setPosterCover(el,g);if(coverObserver)coverObserver.observe(el);else loadCover(g,el)})});
+// Source-independent JSON import/export: supports future lawful datasets without exposing API keys.
+function normalizeImportedGame(raw,index){
+ const name=raw.name||raw.title||raw.ProductName||raw.trophyTitleName;
+ if(!name||typeof name!=='string')return null;
+ const platform=String(raw.platform||raw.Platform||raw.trophyTitlePlatform||'PS4').replace(/\s+/g,' ').trim();
+ const rawTrophies=Array.isArray(raw.trophies)?raw.trophies:(Array.isArray(raw.Trophies)?raw.Trophies:(Array.isArray(raw.trophyList)?raw.trophyList:[]));
+ const trophies=rawTrophies.map((t,i)=>{
+  const rawType=String(t.type||t.trophyType||t.rarity||'bronze').toLowerCase();
+  const type=rawType.includes('platinum')?'platinum':rawType.includes('gold')?'gold':rawType.includes('silver')?'silver':'bronze';
+  const trophyName=t.name||t.trophyName||t.title||`Trophy ${i+1}`;
+  return {id:String(t.id??t.trophyId??`${index}-${i}`),name:String(trophyName),desc:String(t.desc||t.description||t.trophyDetail||''),type,done:!!t.done};
+ });
+ return {id:String(raw.id||raw.npCommunicationId||raw.gameId||`import-${normalizeTitle(name)}-${platform}`),name,platform,icon:raw.icon||'🎮',year:Number(raw.year||raw.releaseYear||0)||null,category:raw.category||raw.genre||'غير محدد',rating:raw.rating??null,total:Number(raw.total||raw.definedTrophies?.total||trophies.length)||trophies.length,guideUrl:raw.guideUrl||'',guideCount:Number(raw.guideCount||0)||null,trophies};
+}
+document.getElementById('importDb').addEventListener('click',()=>document.getElementById('dbFile').click());
+document.getElementById('dbFile').addEventListener('change',async e=>{
+ const file=e.target.files?.[0];if(!file)return;
+ try{
+  if(file.size>25*1024*1024)throw new Error('حجم الملف أكبر من 25 ميغابايت.');
+  const parsed=JSON.parse(await file.text());
+  const list=Array.isArray(parsed)?parsed:(Array.isArray(parsed.games)?parsed.games:(Array.isArray(parsed.data)?parsed.data:null));
+  if(!list)throw new Error('صيغة الملف غير معروفة. نحتاج مصفوفة ألعاب أو كائنًا يحتوي games أو data.');
+  const imported=list.map(normalizeImportedGame).filter(Boolean);
+  if(!imported.length)throw new Error('لم نجد ألعابًا صالحة في الملف.');
+  const key=g=>normalizeTitle(g.name)+'|'+String(g.platform).toLowerCase();
+  const map=new Map(games.map(g=>[key(g),g]));
+  for(const incoming of imported){
+   const existing=map.get(key(incoming));
+   if(existing){
+    const oldDone=new Map((existing.trophies||[]).map(t=>[String(t.id),!!t.done]));
+    incoming.trophies=incoming.trophies.map(t=>({...t,done:oldDone.get(String(t.id))??t.done}));
+    map.set(key(incoming),{...existing,...incoming});
+   }else map.set(key(incoming),incoming);
+  }
+  games=Array.from(map.values());
+  try{safeSet('pq_games',JSON.stringify(games))}catch(storageError){throw new Error('تمت قراءة البيانات، لكن مساحة الحفظ في المتصفح غير كافية. جرّب ملفًا أصغر.');}
+  activeId=games.find(g=>g.id===activeId)?.id||games[0]?.id||null;
+  renderAll();renderTrophies();
+  alert(`تم استيراد ${imported.length} لعبة بنجاح. عدد الألعاب في المكتبة الآن: ${games.length}.`);
+ }catch(err){alert('تعذّر استيراد قاعدة البيانات: '+(err?.message||'ملف غير صالح'));}
+ finally{e.target.value='';}
+});
+document.getElementById('exportDb').addEventListener('click',()=>{
+ const blob=new Blob([JSON.stringify({schemaVersion:1,exportedAt:new Date().toISOString(),games},null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='platquest-database-backup.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+function addBubble(txt,who){const b=document.createElement('div');b.className='bubble '+who;b.textContent=txt;const log=document.getElementById('chatlog');log.appendChild(b);log.scrollTop=log.scrollHeight}
+function answer(q){const g=games.find(x=>x.id===activeId),s=q.toLowerCase();if(s.includes('تقدم')||s.includes('نسبة'))return g?(g.trophies.length?`في ${g.name} أنجزت ${earned(g)} من ${g.trophies.length} تروفيًا مدخلًا (${Math.round(earned(g)/g.trophies.length*100)}%). علّم المربعات بعد الإنجاز.`:`أضفنا ${g.name} إلى المكتبة، لكن قائمة تروفياتها الرسمية لم تُتحقق بعد؛ لذلك لم نحتسب تقدمًا لهذه اللعبة.`):'اختر لعبة أولًا، ثم راجع التروفيات المسجلة ليظهر تقدمك.';if(s.includes('تفوت')||s.includes('تفوتني')||s.includes('missable'))return 'قبل ما تبدأ: راجع قائمة التروفيات ودليلًا موثوقًا للعبة لتعرف التروفيات القابلة للفوات. احتفظ بحفظة منفصلة إن كانت اللعبة تسمح بذلك، ولا تفترض أن كل تروفي يمكن الحصول عليه بعد إنهاء القصة.';if(s.includes('خطة')||s.includes('بلاتينيوم')||s.includes('أبدأ'))return `خطة عامة للبلاتينيوم${g?' في '+g.name:''}:\n1) راجع قائمة التروفيات كاملة.\n2) حدّد التروفيات القابلة للفوات والصعوبة المطلوبة.\n3) العب القصة مع جمع الأشياء القابلة للجمع.\n4) نظّف التروفيات المتبقية بعد القصة.\n5) تحقق من شروط البلاتينيوم من دليل حديث خاص بنسخة لعبتك.\nتنبيه: قائمة Resident Evil 7 الأساسية مدخلة، لكن اللعبة لا تزال تحتاج دليلًا تفصيليًا لمواقع المقتنيات وخطة الإنجاز.`;if(s.includes('صعب')||s.includes('دليل')||s.includes('كيف أجيب'))return 'اختر اللعبة واضغط «التروفيات والدليل» للوصول إلى نتائج مخصصة باسمها ومنصتها. هذه النسخة لا تتصل بقاعدة بيانات رسمية، لذلك لا أريد اختراع شروط تروفي غير مؤكدة.';return 'أقدر أساعدك في ترتيب خطة التروفيات وتتبع ما أنجزته. اختر لعبة من المكتبة واكتب اسم التروفي أو سؤالك. حاليًا هذا مساعد تجريبي بإجابات أساسية، وليس اتصالًا بخدمة ذكاء اصطناعي مباشرة.'}
+function askQuick(q){document.getElementById('question').value=q;document.getElementById('chatform').requestSubmit()}
+document.getElementById('languageSelect').addEventListener('change',e=>applyLanguage(e.target.value));
+document.getElementById('chatform').addEventListener('submit',e=>{e.preventDefault();const input=document.getElementById('question'),q=input.value.trim();if(!q)return;addBubble(q,'user');input.value='';setTimeout(()=>addBubble(answer(q),'bot'),120)})
+document.getElementById('search').value='';document.getElementById('platform').value='all';document.getElementById('sort').value='default';
+// RAWG cover helper: the API key is entered by the user and kept only in this browser's session.
+let pqRawgKey='';
+let pqRawgCoverCache={};
+try{pqRawgCoverCache=JSON.parse(safeGet('pq_rawg_cover_cache')||'{}')||{}}catch(e){pqRawgCoverCache={}}
+function pqRawgStatus(message){const el=document.getElementById('rawgStatus');if(el)el.textContent=message;}
+function pqDelay(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
+async function pqRawgFindCover(game,key){
+ const cached=pqRawgCoverCache[game.id];if(cached)return cached;if(game.coverUrl){pqRawgCoverCache[game.id]=game.coverUrl;try{safeSet('pq_rawg_cover_cache',JSON.stringify(pqRawgCoverCache))}catch(e){}return game.coverUrl;}
+ const url='https://api.rawg.io/api/games?key='+encodeURIComponent(key)+'&search='+encodeURIComponent(game.name)+'&page_size=8&search_precise=true';
+ const response=await fetch(url,{headers:{'Accept':'application/json'}});
+ if(!response.ok){if(response.status===401||response.status===403)throw new Error('مفتاح RAWG غير صالح أو غير مسموح. تأكد من المفتاح.');if(response.status===429)throw new Error('RAWG طلب الانتظار بسبب كثرة الطلبات. انتظر قليلًا ثم جرّب مرة أخرى.');throw new Error('تعذر الوصول إلى RAWG (HTTP '+response.status+').');}
+ const data=await response.json();const candidates=(data.results||[]).filter(x=>x.background_image).map(x=>({x,score:titleScore(game.name,x.name)})).sort((a,b)=>b.score-a.score);
+ if(!candidates.length||candidates[0].score<0.55)return null;
+ const image=candidates[0].x.background_image;pqRawgCoverCache[game.id]=image;
+ try{safeSet('pq_rawg_cover_cache',JSON.stringify(pqRawgCoverCache))}catch(e){}
+ return image;
+}
+async function pqLoadRawgCovers(){
+ const key=document.getElementById('rawgKeyInput').value.trim();
+ if(!key){pqRawgStatus('الصق مفتاح RAWG أولًا، ثم اضغط «جلب الأغلفة».');document.getElementById('rawgKeyInput').focus();return;}
+ pqRawgKey=key;const button=document.getElementById('rawgLoadCovers');button.disabled=true;button.textContent='⏳ جاري الجلب…';
+ let success=0,missing=0,failed='';const total=games.length;
+ try{
+  for(let i=0;i<total;i++){
+   const game=games[i];pqRawgStatus('جاري البحث عن غلاف '+(i+1)+' من '+total+': '+game.name);
+   try{
+    const image=await pqRawgFindCover(game,key);
+    if(image){success++;document.querySelectorAll('.cover[data-game-id="'+CSS.escape(String(game.id))+'"]').forEach(el=>setCoverImage(el,image,game.icon,game.platform));}
+    else missing++;
+   }catch(err){failed=err.message||'حدث خطأ';break;}
+   await pqDelay(180);
+  }
+  if(failed)pqRawgStatus('توقف الجلب: '+failed+' تم العثور على '+success+' غلافًا حتى الآن.');
+  else pqRawgStatus('اكتمل البحث! تم العثور على '+success+' غلافًا من أصل '+total+' لعبة. لم تتوفر صورة مناسبة لـ '+missing+' لعبة.');
+ }finally{button.disabled=false;button.textContent='🪄 جلب الأغلفة';}
+}
+document.getElementById('rawgLoadCovers').addEventListener('click',pqLoadRawgCovers);
+
+document.getElementById('rawgClearKey').addEventListener('click',()=>{pqRawgKey='';document.getElementById('rawgKeyInput').value='';pqRawgStatus('تم مسح المفتاح من الخانة.');});
+
+// Genre importer: max 1,000 games per selected genre, PlayStation-parent only, deduplicated.
+let pqImportStopRequested=false;
+const pqGenreArabic={action:'أكشن ومغامرات',adventure:'مغامرات','role-playing-games-rpg':'تقمص أدوار',shooter:'تصويب',strategy:'استراتيجية',puzzle:'ألغاز',racing:'سباقات',sports:'رياضة',fighting:'قتال',platformer:'منصات',simulation:'محاكاة',indie:'مستقلة'};
+const pqPsPlatformNames=[
+ {test:/playstation 5|ps5/i,label:'PS5'}, {test:/playstation 4|ps4/i,label:'PS4'},
+ {test:/playstation 3|ps3/i,label:'PS3'}, {test:/playstation 2|ps2/i,label:'PS2'},
+ {test:/playstation 1|playstation one|\bps1\b|\bpsx\b/i,label:'PS1'}, {test:/playstation vita|ps vita|vita/i,label:'PS Vita'},
+ {test:/playstation portable|psp/i,label:'PSP'}
+];
+function pqGetPsPlatforms(item){const names=(item.platforms||[]).map(x=>x.platform?.name||'').filter(Boolean);const out=[];for(const p of pqPsPlatformNames){if(names.some(n=>p.test.test(n))&&!out.includes(p.label))out.push(p.label)}return out;}
+function pqNormalizeName(name){return String(name||'').normalize('NFKD').toLowerCase().replace(/[’‘`´]/g,"'").replace(/[^\p{L}\p{N}]+/gu,' ').trim().replace(/\s+/g,' ')}
+function pqImportStatus(msg){const el=document.getElementById('pqImportStatus');if(el)el.textContent=msg;}
+function pqExistingRawgIds(platform){return new Set(games.filter(g=>String(g.platform||'').split(/\s*\/\s*/).includes(platform)).map(g=>String(g.rawgId??(String(g.id).startsWith('rawg-')?String(g.id).slice(5):''))).filter(Boolean));}
+function pqExistingNamePlatformKeys(){return new Set(games.map(g=>pqNormalizeName(g.name)+'|'+String(g.platform||'').split(/\s*\/\s*/).map(x=>x.trim()).sort().join('/')))}
+function pqRawgToGame(item,genre){
+ const ps=pqGetPsPlatforms(item);if(!ps.length)return null;
+ const category=pqGenreArabic[genre]||((item.genres||[]).map(g=>g.name).join(' · ')||'غير محدد');
+ return {id:'rawg-'+String(item.id),rawgId:String(item.id),name:item.name,platform:ps.join(' / '),icon:'🎮',year:item.released?Number(String(item.released).slice(0,4))||null:null,category,rating:typeof item.rating==='number'?Number(item.rating.toFixed(1)):null,coverUrl:item.background_image||'',guideUrl:'',guideCount:null,total:0,trophies:[]};
+}
+function pqImportDedupKey(g){return pqNormalizeName(g.name)+'|'+String(g.platform||'').split(/\s*\/\s*/).map(x=>x.trim()).sort().join('/')}
+async function pqImportPopularGames(){
+ const key=document.getElementById('rawgKeyInput').value.trim();
+ if(!key){pqImportStatus('الصق مفتاح RAWG في القسم أعلاه أولًا.');document.getElementById('rawgKeyInput').focus();return;}
+ const selected=[...document.querySelectorAll('#pqGenreImportChoices input[type=checkbox]:checked')].map(x=>x.value);
+ const platforms=[...document.querySelectorAll('#pqPlatformImportChoices input[type=checkbox]:checked')].map(x=>({id:x.value,label:x.dataset.platform}));
+ if(!selected.length){pqImportStatus('اختر نوعًا واحدًا على الأقل.');return;}
+ if(!platforms.length){pqImportStatus('اختر جهاز PlayStation واحدًا على الأقل.');return;}
+ pqRawgKey=key;pqImportStopRequested=false;const startCount=games.length,limit=Number(document.getElementById('pqImportLimit').value)||1000;
+ const run=document.getElementById('pqImportPopular'),stop=document.getElementById('pqStopImport');run.disabled=true;stop.disabled=false;run.textContent='⏳ جاري الاستيراد…';
+ let added=0,duplicates=0,notPs=0,requests=0,failed='';
+ const knownKeys=pqExistingNamePlatformKeys();
+ try{
+  for(let pi=0;pi<platforms.length&&!pqImportStopRequested;pi++){
+   const platform=platforms[pi];let platformAccepted=0;
+   const knownIds=pqExistingRawgIds(platform.label);
+   for(let gi=0;gi<selected.length&&platformAccepted<limit&&!pqImportStopRequested;gi++){
+    const genre=selected[gi];let page=1;
+    while(platformAccepted<limit&&!pqImportStopRequested&&page<=100){
+     const url='https://api.rawg.io/api/games?key='+encodeURIComponent(key)+'&platforms='+encodeURIComponent(platform.id)+'&genres='+encodeURIComponent(genre)+'&ordering=-rating&page_size=40&page='+page;
+     const response=await fetch(url,{headers:{Accept:'application/json'}});requests++;
+     if(!response.ok){if(response.status===401||response.status===403)throw new Error('مفتاح RAWG غير صالح أو غير مسموح.');if(response.status===429)throw new Error('RAWG طلب الانتظار بسبب كثرة الطلبات؛ أعد المحاولة لاحقًا.');throw new Error('تعذر الوصول إلى RAWG (HTTP '+response.status+').');}
+     const data=await response.json(),results=data.results||[];if(!results.length)break;
+     for(const item of results){
+      const allPlatforms=pqGetPsPlatforms(item);if(!allPlatforms.includes(platform.label)){notPs++;continue;}
+      const incoming=pqRawgToGame(item,genre);if(!incoming)continue;
+      incoming.platform=platform.label;
+      const nameKey=pqNormalizeName(incoming.name)+'|'+platform.label;
+      const rid=String(incoming.rawgId);
+      if(knownIds.has(rid)||knownKeys.has(nameKey)){duplicates++;continue;}
+      games.push(incoming);knownIds.add(rid);knownKeys.add(nameKey);added++;platformAccepted++;
+      if(platformAccepted>=limit)break;
+     }
+     pqImportStatus(`${platform.label}: ${platformAccepted}/${limit} لعبة. النوع الحالي: ${pqGenreArabic[genre]}. أُضيف إجمالًا ${added} لعبة، وتجاوزنا ${duplicates} تكرارًا.`);
+     if(!data.next)break;page++;await pqDelay(250);
+    }
+   }
+   pqImportStatus(`${platform.label}: اكتمل أو وصل إلى الحد (${platformAccepted}/${limit}). الإجمالي المضاف ${added}.`);
+  }
+  if(!safeSet('pq_games',JSON.stringify(games)))throw new Error('مساحة التخزين غير كافية. صدّر نسخة احتياطية واستورد عددًا أقل.');
+  renderAll();
+  pqImportStatus(`${pqImportStopRequested?'توقف بناءً على طلبك.':'انتهى الاستيراد.'} أُضيف ${added} لعبة جديدة عبر ${platforms.length} منصة، وتم تجاوز ${duplicates} تكرارًا. قد يكون العدد أقل من الهدف بسبب حدود نتائج المصدر. طلبات API: ${requests}.`);
+ }catch(err){failed=err?.message||'حدث خطأ';pqImportStatus(`توقف الاستيراد: ${failed} أُضيف ${added} لعبة حتى الآن. المكتبة الحالية محفوظة عند الإمكان.`);try{safeSet('pq_games',JSON.stringify(games));}catch(e){}}
+ finally{run.disabled=false;stop.disabled=true;run.textContent='🚀 استيراد الأنواع والأجهزة المحددة';}
+}
+document.getElementById('pqImportPopular').addEventListener('click',pqImportPopularGames);
+document.getElementById('pqStopImport').addEventListener('click',()=>{pqImportStopRequested=true;pqImportStatus('سيتم إيقاف الاستيراد بعد انتهاء الطلب الحالي…');});
+
+renderAll();
+applyLanguage(currentLang);
+</script>
+<script>
+(function(){
+  const nativeSelects = Array.from(document.querySelectorAll('select'));
+  const wrappers = [];
+  function closeAll(except){wrappers.forEach(w=>{if(w!==except){w.wrap.classList.remove('pq-open');w.button.setAttribute('aria-expanded','false')}})}
+  function enhance(select,index){
+    if(select.dataset.pqEnhanced==='1') return;
+    select.dataset.pqEnhanced='1';
+    const wrap=document.createElement('div'); wrap.className='pq-select-wrap';
+    const button=document.createElement('button'); button.type='button'; button.className='pq-select-trigger'; button.setAttribute('aria-haspopup','listbox'); button.setAttribute('aria-expanded','false');
+    const label=document.createElement('span'); label.className='pq-select-label';
+    const chev=document.createElement('span'); chev.className='pq-select-chevron'; chev.setAttribute('aria-hidden','true'); chev.textContent='⌄';
+    button.append(label,chev);
+    const menu=document.createElement('div'); menu.className='pq-select-menu'; menu.setAttribute('role','listbox');
+    const id='pq-custom-select-'+index; button.id=id+'-button'; menu.id=id+'-menu'; button.setAttribute('aria-controls',menu.id);
+    select.classList.add('pq-select-native'); select.setAttribute('tabindex','-1'); select.setAttribute('aria-hidden','true');
+    select.parentNode.insertBefore(wrap,select); wrap.append(select,button,menu);
+    const w={select,wrap,button,label,menu}; wrappers.push(w);
+    function refresh(){
+      const opt=select.options[select.selectedIndex]; label.textContent=opt?opt.textContent.trim():'اختر خيارًا';
+      menu.innerHTML='';
+      Array.from(select.options).forEach((o,i)=>{
+        if(o.disabled) return;
+        const item=document.createElement('button'); item.type='button'; item.className='pq-select-option'; item.setAttribute('role','option'); item.setAttribute('aria-selected',String(i===select.selectedIndex)); item.dataset.value=o.value;
+        const txt=document.createElement('span'); txt.textContent=o.textContent.trim(); item.appendChild(txt);
+        if(i===select.selectedIndex){const check=document.createElement('span');check.className='pq-select-check';check.textContent='✓';check.setAttribute('aria-hidden','true');item.appendChild(check)}
+        item.addEventListener('click',ev=>{ev.preventDefault();ev.stopPropagation();select.value=o.value;select.dispatchEvent(new Event('change',{bubbles:true}));refresh();wrap.classList.remove('pq-open');button.setAttribute('aria-expanded','false');button.focus()});
+        menu.appendChild(item);
+      });
+    }
+    button.addEventListener('click',ev=>{ev.preventDefault();ev.stopPropagation();const opening=!wrap.classList.contains('pq-open');closeAll(w);wrap.classList.toggle('pq-open',opening);button.setAttribute('aria-expanded',String(opening));if(opening){const active=menu.querySelector('[aria-selected="true"]');if(active)active.scrollIntoView({block:'nearest'})}});
+    button.addEventListener('keydown',ev=>{if(ev.key==='ArrowDown'||ev.key==='Enter'||ev.key===' '){ev.preventDefault();closeAll(w);wrap.classList.add('pq-open');button.setAttribute('aria-expanded','true');const active=menu.querySelector('[aria-selected="true"]')||menu.querySelector('button');if(active)active.focus()}else if(ev.key==='Escape'){wrap.classList.remove('pq-open');button.setAttribute('aria-expanded','false')}});
+    menu.addEventListener('keydown',ev=>{const items=Array.from(menu.querySelectorAll('button'));let i=items.indexOf(document.activeElement);if(ev.key==='ArrowDown'){ev.preventDefault();items[Math.min(i+1,items.length-1)]?.focus()}else if(ev.key==='ArrowUp'){ev.preventDefault();items[Math.max(i-1,0)]?.focus()}else if(ev.key==='Escape'){wrap.classList.remove('pq-open');button.setAttribute('aria-expanded','false');button.focus()}});
+    select.addEventListener('change',refresh);
+    refresh();
+  }
+  nativeSelects.forEach(enhance);
+  document.addEventListener('click',()=>closeAll(null));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll(null)});
+  document.getElementById('clearClassification')?.addEventListener('click',()=>setTimeout(()=>wrappers.forEach(w=>{const o=w.select.options[w.select.selectedIndex];w.label.textContent=o?o.textContent.trim():'اختر خيارًا';w.menu.querySelectorAll('[role="option"]').forEach(el=>{const selected=el.dataset.value===w.select.value;el.setAttribute('aria-selected',String(selected));const check=el.querySelector('.pq-select-check');if(selected&&!check){const c=document.createElement('span');c.className='pq-select-check';c.textContent='✓';el.appendChild(c)}else if(!selected&&check)check.remove()})}),0));
+})();
+</script>
+</body></html>
